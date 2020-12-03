@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  FinancialCalc
+
+  Created by Bhagya Gunawardena on 11/30/20.
+  Copyright © 2020 iit. All rights reserved.
+*/
+
+//General
+app_name = "FinCalc";

@@ -16,6 +16,10 @@
 		697B135725747D590031E7DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 697B135525747D590031E7DB /* LaunchScreen.storyboard */; };
 		697B136225747D590031E7DB /* FinancialCalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697B136125747D590031E7DB /* FinancialCalcTests.swift */; };
 		697B136D25747D590031E7DB /* FinancialCalcUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697B136C25747D590031E7DB /* FinancialCalcUITests.swift */; };
+		697B137F25752C860031E7DB /* BebasNeue-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 697B137C25752C860031E7DB /* BebasNeue-Bold.ttf */; };
+		697B138025752C860031E7DB /* BebasNeue-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 697B137D25752C860031E7DB /* BebasNeue-Regular.ttf */; };
+		697B138125752C860031E7DB /* BebasNeue-Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 697B137E25752C860031E7DB /* BebasNeue-Book.ttf */; };
+		697B138525752CF90031E7DB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 697B138425752CF90031E7DB /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		697B136825747D590031E7DB /* FinancialCalcUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinancialCalcUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		697B136C25747D590031E7DB /* FinancialCalcUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancialCalcUITests.swift; sourceTree = "<group>"; };
 		697B136E25747D590031E7DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		697B137C25752C860031E7DB /* BebasNeue-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BebasNeue-Bold.ttf"; sourceTree = "<group>"; };
+		697B137D25752C860031E7DB /* BebasNeue-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BebasNeue-Regular.ttf"; sourceTree = "<group>"; };
+		697B137E25752C860031E7DB /* BebasNeue-Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BebasNeue-Book.ttf"; sourceTree = "<group>"; };
+		697B138425752CF90031E7DB /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +109,7 @@
 		697B134625747D530031E7DB /* FinancialCalc */ = {
 			isa = PBXGroup;
 			children = (
+				697B137A25747F910031E7DB /* Resources */,
 				697B134725747D530031E7DB /* AppDelegate.swift */,
 				697B134925747D530031E7DB /* SceneDelegate.swift */,
 				697B134B25747D530031E7DB /* ViewController.swift */,
@@ -129,6 +138,33 @@
 				697B136E25747D590031E7DB /* Info.plist */,
 			);
 			path = FinancialCalcUITests;
+			sourceTree = "<group>";
+		};
+		697B137A25747F910031E7DB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				697B138325752CAD0031E7DB /* Strings */,
+				697B137B25752C410031E7DB /* Fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		697B137B25752C410031E7DB /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				697B137C25752C860031E7DB /* BebasNeue-Bold.ttf */,
+				697B137E25752C860031E7DB /* BebasNeue-Book.ttf */,
+				697B137D25752C860031E7DB /* BebasNeue-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		697B138325752CAD0031E7DB /* Strings */ = {
+			isa = PBXGroup;
+			children = (
+				697B138425752CF90031E7DB /* Localizable.strings */,
+			);
+			path = Strings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,8 +271,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				697B138125752C860031E7DB /* BebasNeue-Book.ttf in Resources */,
+				697B138025752C860031E7DB /* BebasNeue-Regular.ttf in Resources */,
 				697B135725747D590031E7DB /* LaunchScreen.storyboard in Resources */,
+				697B138525752CF90031E7DB /* Localizable.strings in Resources */,
 				697B135425747D590031E7DB /* Assets.xcassets in Resources */,
+				697B137F25752C860031E7DB /* BebasNeue-Bold.ttf in Resources */,
 				697B134F25747D530031E7DB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
