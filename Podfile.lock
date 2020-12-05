@@ -1,0 +1,20 @@
+PODS:
+  - IQKeyboardManagerSwift (6.5.1)
+  - SwiftGen (6.4.0)
+
+DEPENDENCIES:
+  - IQKeyboardManagerSwift
+  - SwiftGen
+
+SPEC REPOS:
+  trunk:
+    - IQKeyboardManagerSwift
+    - SwiftGen
+
+SPEC CHECKSUMS:
+  IQKeyboardManagerSwift: 9ac7524fad9f9fe9a3b98c927e7772471ca546d2
+  SwiftGen: 67860cc7c3cfc2ed25b9b74cfd55495fc89f9108
+
+PODFILE CHECKSUM: 56a736b3478bf3369a02eeaf5b153c246cdb76cc
+
+COCOAPODS: 1.10.0

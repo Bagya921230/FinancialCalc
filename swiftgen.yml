@@ -1,0 +1,21 @@
+colors:
+  paths:
+    - FinancialCalc/Resources/Colors/Colors.txt
+  templateName: swift4
+  output: FinancialCalc/Resources/Generated/Colors.swift
+strings:
+  paths:
+    - FinancialCalc/Resources/Strings/Localizable.strings
+  templateName: structured-swift4
+  output: FinancialCalc/Resources/Generated/Strings.swift
+fonts:
+  paths:
+    - FinancialCalc/Resources/Fonts
+  templateName: swift4
+  output: FinancialCalc/Resources/Generated/Fonts.swift
+xcassets:
+  paths:
+    - FinancialCalc/Assets.xcassets
+  templateName: swift4
+  output: FinancialCalc/Resources/Generated/Assets.swift
+

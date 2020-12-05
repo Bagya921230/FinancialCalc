@@ -8,3 +8,14 @@
 
 //General
 app_name = "FinCalc";
+
+//Landing screen
+greeting_text = "WELCOME TO";
+app_name_text1 = "FIN";
+app_name_text2 = "CALC";
+continue_text = "CONTINUE";
+dynamic_text1 = "You do not have any email addresses in your account. Please enter your email address to receive the receipt";
+dynamic_text2 = "bla bla bla2";
+dynamic_text3 = "bla bla bla3";
+dynamic_text4 = "bla bla bla4";
+
