@@ -7,9 +7,9 @@ Dark            : #0F0A0B
 WarmBrown       : #925200
 Brown           : #562600
 Silver          : #D1D1D6
-FlashGreen      : #57D657
+FlashGreen      : #1BC102
 GrapeFruitPink  : #FF5D5D
-Placeholder     : #1D1D1D
+Placeholder     : #D1D1D6
 LightSilver     : #6B6B6B
 ButtonGrey      : #2D2D2D
 Border          : #979797

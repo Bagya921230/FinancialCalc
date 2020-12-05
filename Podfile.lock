@@ -1,20 +1,32 @@
 PODS:
   - IQKeyboardManagerSwift (6.5.1)
+  - MarqueeLabel/Swift (3.2.1)
+  - NotificationBannerSwift (2.0.1):
+    - MarqueeLabel/Swift (~> 3.2.0)
+    - SnapKit (~> 4.2.0)
+  - SnapKit (4.2.0)
   - SwiftGen (6.4.0)
 
 DEPENDENCIES:
   - IQKeyboardManagerSwift
+  - NotificationBannerSwift (= 2.0.1)
   - SwiftGen
 
 SPEC REPOS:
   trunk:
     - IQKeyboardManagerSwift
+    - MarqueeLabel
+    - NotificationBannerSwift
+    - SnapKit
     - SwiftGen
 
 SPEC CHECKSUMS:
   IQKeyboardManagerSwift: 9ac7524fad9f9fe9a3b98c927e7772471ca546d2
+  MarqueeLabel: 2daf039bf916937c8a4c9adfc13577cc5e51b4ce
+  NotificationBannerSwift: 007774aa590cc9680647b92b2f217bef5c00c32c
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   SwiftGen: 67860cc7c3cfc2ed25b9b74cfd55495fc89f9108
 
-PODFILE CHECKSUM: 56a736b3478bf3369a02eeaf5b153c246cdb76cc
+PODFILE CHECKSUM: ae51f7e7b55008d7d7ec6ccf4c5ee9e98bda40dd
 
 COCOAPODS: 1.10.0

@@ -8,6 +8,8 @@ target 'FinancialCalc' do
   # Pods for FinancialCalc
   pod 'SwiftGen'
   pod 'IQKeyboardManagerSwift'
+  pod 'NotificationBannerSwift','2.0.1'
+
 
   target 'FinancialCalcTests' do
     inherit! :search_paths

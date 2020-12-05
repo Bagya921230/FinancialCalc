@@ -95,20 +95,18 @@ class FinCalcLabel: UILabel {
             
         case .h1Heading, .h1HeadingOrange:
             return 6
-        case .h2Heading, .h1SubHeading:
+        case .h2Heading:
             return 4
-        case .h3Heading, .h3HeadingOrange, .h3HeadingWhite, .h3HeadingWhiteBold:
+        case .h3Heading:
             return 3.5
-        case .h4HeadingOrange, .h4HeadingWhite, .h4HeadingPink:
+        case .h4HeadingRed,.h4HeadingGreen:
             return 1.75
         case .content, .contentLight, .contentWhite:
             return 0.58
         case .component:
             return 0
-        case .componentButtonPrimary, .componentButtonSecondary, .componentButtonSecondarySmall, .componentButtonPrimarySmall:
+        case .componentButtonPrimary, .componentButtonPrimarySmall:
             return 2.63
-        case .componentButtonSmall:
-            return 1.13
         case .componentTextField, .componentTextFieldSmall:
             return 0.5
             

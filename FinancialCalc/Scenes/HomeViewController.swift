@@ -18,7 +18,7 @@ class HomeViewController: CustomViewController {
     
     var selectedIndex: Int = 0
     
-    var titleList: [String] = ["SAVINGS","COMPOUND INT.\nSAVINGS", "LOANS", "MORTGAGE"]
+    var titleList: [String] = ["INVESTMENT","SAVING", "LOANS", "MORTGAGE"]
     var imageList: [UIImage] = [ Asset.saving.image,Asset.compoundIntesrest.image, Asset.loan.image, Asset.mortgage1.image]
     
     override func viewDidLoad() {
@@ -37,11 +37,7 @@ class HomeViewController: CustomViewController {
         case "segueTabbar":
             let vc = segue.destination as! TabBarViewController
             vc.selectIndex = selectedIndex
-            if (selectedIndex == 1) {
-                vc.title = "COMPOUND INTEREST SAVINGS"
-            } else {
-                vc.title = titleList[selectedIndex]
-            }
+            vc.title = titleList[selectedIndex]
         default:
             return
         }

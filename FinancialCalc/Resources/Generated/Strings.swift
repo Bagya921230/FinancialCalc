@@ -17,6 +17,10 @@ internal enum L10n {
   internal static let appNameText1 = L10n.tr("Localizable", "app_name_text1")
   /// CALC
   internal static let appNameText2 = L10n.tr("Localizable", "app_name_text2")
+  /// CALCULATE
+  internal static let calculateBtnText = L10n.tr("Localizable", "calculate_btn_text")
+  /// Compounds Per Year
+  internal static let compoundsText = L10n.tr("Localizable", "compounds_text")
   /// CONTINUE
   internal static let continueText = L10n.tr("Localizable", "continue_text")
   /// You do not have any email addresses in your account. Please enter your email address to receive the receipt
@@ -27,8 +31,18 @@ internal enum L10n {
   internal static let dynamicText3 = L10n.tr("Localizable", "dynamic_text3")
   /// bla bla bla4
   internal static let dynamicText4 = L10n.tr("Localizable", "dynamic_text4")
+  /// Future Value
+  internal static let futureValueText = L10n.tr("Localizable", "future_value_text")
   /// WELCOME TO
   internal static let greetingText = L10n.tr("Localizable", "greeting_text")
+  /// Interest Rate
+  internal static let interestText = L10n.tr("Localizable", "interest_text")
+  /// Present Value
+  internal static let presentValueText = L10n.tr("Localizable", "present_value_text")
+  /// RESET
+  internal static let resetBtnText = L10n.tr("Localizable", "reset_btn_text")
+  /// Years
+  internal static let yearsText = L10n.tr("Localizable", "years_text")
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name

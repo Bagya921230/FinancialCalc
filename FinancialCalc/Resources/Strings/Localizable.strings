@@ -19,3 +19,13 @@ dynamic_text2 = "bla bla bla2";
 dynamic_text3 = "bla bla bla3";
 dynamic_text4 = "bla bla bla4";
 
+//Savings screen
+present_value_text = "Present Value";
+future_value_text = "Future Value";
+interest_text = "Interest Rate";
+years_text = "Years";
+compounds_text = "Compounds Per Year";
+reset_btn_text = "RESET";
+calculate_btn_text = "CALCULATE";
+
+

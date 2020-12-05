@@ -46,8 +46,8 @@
 		697B138125752C860031E7DB /* BebasNeue-Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 697B137E25752C860031E7DB /* BebasNeue-Book.ttf */; };
 		697B138525752CF90031E7DB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 697B138425752CF90031E7DB /* Localizable.strings */; };
 		69BAD137257AAF6F00C90649 /* SavingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BAD136257AAF6F00C90649 /* SavingsViewController.swift */; };
-		69BAD146257B2D8D00C90649 /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BAD145257B2D8D00C90649 /* SecondaryButton.swift */; };
-		69BAD148257B2DB300C90649 /* SecondaryButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69BAD147257B2DB300C90649 /* SecondaryButton.xib */; };
+		69FAFB98257B7F1E00864E00 /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FAFB97257B7F1E00864E00 /* DoubleExtension.swift */; };
+		69FAFB9A257BFD6A00864E00 /* MortgageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FAFB99257BFD6A00864E00 /* MortgageViewController.swift */; };
 		6A9437F2621C9C7BF0F8AB41 /* Pods_FinancialCalc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD42B85F1819BBC305FA7342 /* Pods_FinancialCalc.framework */; };
 /* End PBXBuildFile section */
 
@@ -114,8 +114,8 @@
 		697B137E25752C860031E7DB /* BebasNeue-Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BebasNeue-Book.ttf"; sourceTree = "<group>"; };
 		697B138425752CF90031E7DB /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		69BAD136257AAF6F00C90649 /* SavingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingsViewController.swift; sourceTree = "<group>"; };
-		69BAD145257B2D8D00C90649 /* SecondaryButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
-		69BAD147257B2DB300C90649 /* SecondaryButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondaryButton.xib; sourceTree = "<group>"; };
+		69FAFB97257B7F1E00864E00 /* DoubleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtension.swift; sourceTree = "<group>"; };
+		69FAFB99257BFD6A00864E00 /* MortgageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MortgageViewController.swift; sourceTree = "<group>"; };
 		82A88902F187D9D1314D0CED /* Pods-FinancialCalcTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinancialCalcTests.release.xcconfig"; path = "Target Support Files/Pods-FinancialCalcTests/Pods-FinancialCalcTests.release.xcconfig"; sourceTree = "<group>"; };
 		A71DC768BE8B25E0A7675CBE /* Pods-FinancialCalcTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinancialCalcTests.debug.xcconfig"; path = "Target Support Files/Pods-FinancialCalcTests/Pods-FinancialCalcTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C504F9A78A9D1B346B445696 /* Pods-FinancialCalc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinancialCalc.release.xcconfig"; path = "Target Support Files/Pods-FinancialCalc/Pods-FinancialCalc.release.xcconfig"; sourceTree = "<group>"; };
@@ -188,6 +188,7 @@
 				69589A7D2579087300FCE575 /* UIFontExtension.swift */,
 				69589A8A25790C8F00FCE575 /* UIDevice.swift */,
 				69589A8C2579219900FCE575 /* UIViewExtension.swift */,
+				69FAFB97257B7F1E00864E00 /* DoubleExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -201,6 +202,7 @@
 				69589A962579401100FCE575 /* HomeCollectionViewCell.swift */,
 				69188CDE257A94020008F976 /* TabBarViewController.swift */,
 				69BAD136257AAF6F00C90649 /* SavingsViewController.swift */,
+				69FAFB99257BFD6A00864E00 /* MortgageViewController.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -225,7 +227,6 @@
 		69589A692578FFD800FCE575 /* Widgets */ = {
 			isa = PBXGroup;
 			children = (
-				69BAD144257B2D8D00C90649 /* SecondaryButton */,
 				69589A8425790BA400FCE575 /* PrimaryButton */,
 				69589A77257904FB00FCE575 /* FinCalcTextField.swift */,
 				69589A792579066F00FCE575 /* FinCalcLabel.swift */,
@@ -349,15 +350,6 @@
 				697B138425752CF90031E7DB /* Localizable.strings */,
 			);
 			path = Strings;
-			sourceTree = "<group>";
-		};
-		69BAD144257B2D8D00C90649 /* SecondaryButton */ = {
-			isa = PBXGroup;
-			children = (
-				69BAD145257B2D8D00C90649 /* SecondaryButton.swift */,
-				69BAD147257B2DB300C90649 /* SecondaryButton.xib */,
-			);
-			path = SecondaryButton;
 			sourceTree = "<group>";
 		};
 		ED017F0DECFEBA3555846009 /* Pods */ = {
@@ -487,7 +479,6 @@
 				69589A9325792F5E00FCE575 /* Colors.txt in Resources */,
 				69589A632578FD6100FCE575 /* Roboto-Bold.ttf in Resources */,
 				69589A612578FD6100FCE575 /* Roboto-Regular.ttf in Resources */,
-				69BAD148257B2DB300C90649 /* SecondaryButton.xib in Resources */,
 				697B135725747D590031E7DB /* LaunchScreen.storyboard in Resources */,
 				697B138525752CF90031E7DB /* Localizable.strings in Resources */,
 				697B135425747D590031E7DB /* Assets.xcassets in Resources */,
@@ -622,6 +613,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69FAFB98257B7F1E00864E00 /* DoubleExtension.swift in Sources */,
 				69589A73257903BB00FCE575 /* Fonts.swift in Sources */,
 				69589A8B25790C8F00FCE575 /* UIDevice.swift in Sources */,
 				69188CDF257A94020008F976 /* TabBarViewController.swift in Sources */,
@@ -632,10 +624,10 @@
 				69589A74257903BB00FCE575 /* Strings.swift in Sources */,
 				69589A8D2579219900FCE575 /* UIViewExtension.swift in Sources */,
 				697B134C25747D530031E7DB /* ViewController.swift in Sources */,
-				69BAD146257B2D8D00C90649 /* SecondaryButton.swift in Sources */,
 				69589A7A2579066F00FCE575 /* FinCalcLabel.swift in Sources */,
 				697B134825747D530031E7DB /* AppDelegate.swift in Sources */,
 				697B135225747D530031E7DB /* FinancialCalc.xcdatamodeld in Sources */,
+				69FAFB9A257BFD6A00864E00 /* MortgageViewController.swift in Sources */,
 				69589A662578FDB100FCE575 /* FinCalcFonts.swift in Sources */,
 				69589A9125792C7900FCE575 /* CustomViewController.swift in Sources */,
 				69589A682578FDE000FCE575 /* FinCalcTypoStyle.swift in Sources */,

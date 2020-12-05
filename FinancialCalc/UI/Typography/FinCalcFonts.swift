@@ -16,29 +16,23 @@ struct FinCalcFonts {
         switch typographyStyle {
         case .h1Heading, .h1HeadingOrange:
             return bebasNeueBold(size: 36)
-        case .h1SubHeading:
-            return bebasNeueBold(size: 28)
         case .h2Heading:
             return bebasNeueBook(size: 24)
-        case .h3Heading, .h3HeadingOrange, .h3HeadingWhite:
+        case .h3Heading:
             return bebasNeueRegular(size: 21)
-        case .h3HeadingWhiteBold:
-            return bebasNeueBold(size: 21)
-        case .h4HeadingOrange, .h4HeadingWhite, .h4HeadingPink:
+        case .h4HeadingGreen, .h4HeadingRed:
             return robotoMedium(size: 14)
         case .content, .contentLight, .contentWhite:
             return robotoRegular(size: 14)
         case .component:
             return bebasNeueBold(size: 10)
-        case .componentButtonPrimary, .componentButtonSecondary:
+        case .componentButtonPrimary:
             return bebasNeueRegular(size: 21)
-        case .componentButtonSmall:
-            return bebasNeueBook(size: 12)
         case .componentTextField:
             return robotoMedium(size: 16)
         case .componentTextFieldSmall:
             return robotoMedium(size: 14)
-        case .componentButtonPrimarySmall, .componentButtonSecondarySmall:
+        case .componentButtonPrimarySmall:
             return bebasNeueRegular(size: 18)
             
         }

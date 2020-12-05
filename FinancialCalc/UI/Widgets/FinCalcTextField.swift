@@ -69,7 +69,7 @@ class FinCalcTextField: UITextField {
     }
     
     private func setupPlaceholder(placeholder: String) {
-        let attributedPlaceholderString = NSMutableAttributedString(string: placeholder, attributes: [NSAttributedString.Key.foregroundColor: UIColor.darkGray])
+        let attributedPlaceholderString = NSMutableAttributedString(string: placeholder, attributes: [NSAttributedString.Key.foregroundColor: ColorName.placeholder.color])
         attributedPlaceholderString.addAttribute(NSAttributedString.Key.kern, value: 0.5, range: NSRange(location: 0, length: placeholder.count))
         attributedPlaceholder = attributedPlaceholderString
     }

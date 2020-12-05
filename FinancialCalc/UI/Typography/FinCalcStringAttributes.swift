@@ -30,22 +30,18 @@ struct FinCalcStringAttributes {
         
         switch typographyStyle {
             
-        case .h1Heading, .h3HeadingWhite, .h4HeadingWhite, .componentButtonSecondary, .componentButtonSecondarySmall, .h3HeadingWhiteBold, .h1SubHeading:
+        case .h1Heading,.h3Heading, .content, .contentLight:
             return ColorName.lightSilver
-        case .h1HeadingOrange, .h3HeadingOrange, .h4HeadingOrange:
+        case .h1HeadingOrange:
             return ColorName.primary
-        case .h3Heading, .content:
-            return ColorName.lightSilver
-        case .h2Heading, .component, .componentButtonSmall:
+        case .componentTextField, .componentTextFieldSmall,.h2Heading, .component:
             return ColorName.black
-        case .componentTextField,.contentWhite, .componentTextFieldSmall:
-            return ColorName.black
-        case .h4HeadingPink:
-            return ColorName.grapeFruitPink
-        case .contentLight:
-            return ColorName.lightSilver
-        case .componentButtonPrimary, .componentButtonPrimarySmall:
+        case .componentButtonPrimary, .componentButtonPrimarySmall,.contentWhite:
             return ColorName.white
+        case .h4HeadingGreen:
+            return ColorName.flashGreen
+        case .h4HeadingRed:
+            return ColorName.grapeFruitPink
             
         }
     }

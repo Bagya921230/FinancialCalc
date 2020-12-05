@@ -43,9 +43,9 @@ internal struct ColorName {
   /// <span style="display:block;width:3em;height:2em;border:1px solid black;background:#ffffff"></span>
   /// Alpha: 14% <br/> (0xffffff26)
   internal static let disabledWhite = ColorName(rgbaValue: 0xffffff26)
-  /// <span style="display:block;width:3em;height:2em;border:1px solid black;background:#57d657"></span>
-  /// Alpha: 100% <br/> (0x57d657ff)
-  internal static let flashGreen = ColorName(rgbaValue: 0x57d657ff)
+  /// <span style="display:block;width:3em;height:2em;border:1px solid black;background:#1bc102"></span>
+  /// Alpha: 100% <br/> (0x1bc102ff)
+  internal static let flashGreen = ColorName(rgbaValue: 0x1bc102ff)
   /// <span style="display:block;width:3em;height:2em;border:1px solid black;background:#ff5d5d"></span>
   /// Alpha: 100% <br/> (0xff5d5dff)
   internal static let grapeFruitPink = ColorName(rgbaValue: 0xff5d5dff)
@@ -55,9 +55,9 @@ internal struct ColorName {
   /// <span style="display:block;width:3em;height:2em;border:1px solid black;background:#6b6b6b"></span>
   /// Alpha: 100% <br/> (0x6b6b6bff)
   internal static let lightSilver = ColorName(rgbaValue: 0x6b6b6bff)
-  /// <span style="display:block;width:3em;height:2em;border:1px solid black;background:#1d1d1d"></span>
-  /// Alpha: 100% <br/> (0x1d1d1dff)
-  internal static let placeholder = ColorName(rgbaValue: 0x1d1d1dff)
+  /// <span style="display:block;width:3em;height:2em;border:1px solid black;background:#d1d1d6"></span>
+  /// Alpha: 100% <br/> (0xd1d1d6ff)
+  internal static let placeholder = ColorName(rgbaValue: 0xd1d1d6ff)
   /// <span style="display:block;width:3em;height:2em;border:1px solid black;background:#9869cc"></span>
   /// Alpha: 100% <br/> (0x9869ccff)
   internal static let primary = ColorName(rgbaValue: 0x9869ccff)
