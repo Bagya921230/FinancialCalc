@@ -48,7 +48,7 @@ class PrimaryButton: UIButton {
     }
     
     private func updateUI() {
-        backgroundView.backgroundColor = isEnabled ? ColorName.primary.color : ColorName.buttonGrey.color
+        backgroundView.backgroundColor = isEnabled ? ColorName.flashGreen.color : ColorName.buttonGrey.color
         backgroundView.layer.cornerRadius = 5
         let textColor: UIColor
         if !isEnabled {

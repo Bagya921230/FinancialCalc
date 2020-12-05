@@ -45,7 +45,10 @@
 		697B138025752C860031E7DB /* BebasNeue-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 697B137D25752C860031E7DB /* BebasNeue-Regular.ttf */; };
 		697B138125752C860031E7DB /* BebasNeue-Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 697B137E25752C860031E7DB /* BebasNeue-Book.ttf */; };
 		697B138525752CF90031E7DB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 697B138425752CF90031E7DB /* Localizable.strings */; };
-		69BAD137257AAF6F00C90649 /* SavingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BAD136257AAF6F00C90649 /* SavingsViewController.swift */; };
+		69BAD137257AAF6F00C90649 /* InvestmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BAD136257AAF6F00C90649 /* InvestmentViewController.swift */; };
+		69DC21ED257C18D5004564E7 /* CompoundSavingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DC21EC257C18D5004564E7 /* CompoundSavingsViewController.swift */; };
+		69DC21EF257C1900004564E7 /* LoanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DC21EE257C1900004564E7 /* LoanViewController.swift */; };
+		69DC21F8257C37E4004564E7 /* PaymentDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DC21F7257C37E4004564E7 /* PaymentDetailsViewController.swift */; };
 		69FAFB98257B7F1E00864E00 /* DoubleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FAFB97257B7F1E00864E00 /* DoubleExtension.swift */; };
 		69FAFB9A257BFD6A00864E00 /* MortgageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69FAFB99257BFD6A00864E00 /* MortgageViewController.swift */; };
 		6A9437F2621C9C7BF0F8AB41 /* Pods_FinancialCalc.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD42B85F1819BBC305FA7342 /* Pods_FinancialCalc.framework */; };
@@ -113,7 +116,10 @@
 		697B137D25752C860031E7DB /* BebasNeue-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BebasNeue-Regular.ttf"; sourceTree = "<group>"; };
 		697B137E25752C860031E7DB /* BebasNeue-Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BebasNeue-Book.ttf"; sourceTree = "<group>"; };
 		697B138425752CF90031E7DB /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
-		69BAD136257AAF6F00C90649 /* SavingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavingsViewController.swift; sourceTree = "<group>"; };
+		69BAD136257AAF6F00C90649 /* InvestmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentViewController.swift; sourceTree = "<group>"; };
+		69DC21EC257C18D5004564E7 /* CompoundSavingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompoundSavingsViewController.swift; sourceTree = "<group>"; };
+		69DC21EE257C1900004564E7 /* LoanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanViewController.swift; sourceTree = "<group>"; };
+		69DC21F7257C37E4004564E7 /* PaymentDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentDetailsViewController.swift; sourceTree = "<group>"; };
 		69FAFB97257B7F1E00864E00 /* DoubleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtension.swift; sourceTree = "<group>"; };
 		69FAFB99257BFD6A00864E00 /* MortgageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MortgageViewController.swift; sourceTree = "<group>"; };
 		82A88902F187D9D1314D0CED /* Pods-FinancialCalcTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FinancialCalcTests.release.xcconfig"; path = "Target Support Files/Pods-FinancialCalcTests/Pods-FinancialCalcTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -196,13 +202,14 @@
 		69589A5C2578FA1000FCE575 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				697B134B25747D530031E7DB /* ViewController.swift */,
+				69DC21F6257C37C7004564E7 /* PaymentDetails */,
+				69DC21F5257C1C15004564E7 /* Landing */,
+				69DC21F4257C1C05004564E7 /* Home */,
+				69DC21F3257C1BE9004564E7 /* Loan */,
+				69DC21F2257C1BDE004564E7 /* Mortgage */,
+				69DC21F1257C1BC3004564E7 /* Savings */,
+				69DC21F0257C1BB2004564E7 /* Investment */,
 				697B134D25747D530031E7DB /* Main.storyboard */,
-				69589A9425793E3500FCE575 /* HomeViewController.swift */,
-				69589A962579401100FCE575 /* HomeCollectionViewCell.swift */,
-				69188CDE257A94020008F976 /* TabBarViewController.swift */,
-				69BAD136257AAF6F00C90649 /* SavingsViewController.swift */,
-				69FAFB99257BFD6A00864E00 /* MortgageViewController.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -350,6 +357,64 @@
 				697B138425752CF90031E7DB /* Localizable.strings */,
 			);
 			path = Strings;
+			sourceTree = "<group>";
+		};
+		69DC21F0257C1BB2004564E7 /* Investment */ = {
+			isa = PBXGroup;
+			children = (
+				69BAD136257AAF6F00C90649 /* InvestmentViewController.swift */,
+			);
+			path = Investment;
+			sourceTree = "<group>";
+		};
+		69DC21F1257C1BC3004564E7 /* Savings */ = {
+			isa = PBXGroup;
+			children = (
+				69DC21EC257C18D5004564E7 /* CompoundSavingsViewController.swift */,
+			);
+			path = Savings;
+			sourceTree = "<group>";
+		};
+		69DC21F2257C1BDE004564E7 /* Mortgage */ = {
+			isa = PBXGroup;
+			children = (
+				69FAFB99257BFD6A00864E00 /* MortgageViewController.swift */,
+			);
+			path = Mortgage;
+			sourceTree = "<group>";
+		};
+		69DC21F3257C1BE9004564E7 /* Loan */ = {
+			isa = PBXGroup;
+			children = (
+				69DC21EE257C1900004564E7 /* LoanViewController.swift */,
+			);
+			path = Loan;
+			sourceTree = "<group>";
+		};
+		69DC21F4257C1C05004564E7 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				69589A9425793E3500FCE575 /* HomeViewController.swift */,
+				69589A962579401100FCE575 /* HomeCollectionViewCell.swift */,
+				69188CDE257A94020008F976 /* TabBarViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		69DC21F5257C1C15004564E7 /* Landing */ = {
+			isa = PBXGroup;
+			children = (
+				697B134B25747D530031E7DB /* ViewController.swift */,
+			);
+			path = Landing;
+			sourceTree = "<group>";
+		};
+		69DC21F6257C37C7004564E7 /* PaymentDetails */ = {
+			isa = PBXGroup;
+			children = (
+				69DC21F7257C37E4004564E7 /* PaymentDetailsViewController.swift */,
+			);
+			path = PaymentDetails;
 			sourceTree = "<group>";
 		};
 		ED017F0DECFEBA3555846009 /* Pods */ = {
@@ -613,23 +678,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69DC21F8257C37E4004564E7 /* PaymentDetailsViewController.swift in Sources */,
 				69FAFB98257B7F1E00864E00 /* DoubleExtension.swift in Sources */,
 				69589A73257903BB00FCE575 /* Fonts.swift in Sources */,
 				69589A8B25790C8F00FCE575 /* UIDevice.swift in Sources */,
 				69188CDF257A94020008F976 /* TabBarViewController.swift in Sources */,
 				69589A7E2579087300FCE575 /* UIFontExtension.swift in Sources */,
 				69589A76257903BB00FCE575 /* Colors.swift in Sources */,
-				69BAD137257AAF6F00C90649 /* SavingsViewController.swift in Sources */,
+				69BAD137257AAF6F00C90649 /* InvestmentViewController.swift in Sources */,
 				69589A78257904FB00FCE575 /* FinCalcTextField.swift in Sources */,
 				69589A74257903BB00FCE575 /* Strings.swift in Sources */,
 				69589A8D2579219900FCE575 /* UIViewExtension.swift in Sources */,
 				697B134C25747D530031E7DB /* ViewController.swift in Sources */,
 				69589A7A2579066F00FCE575 /* FinCalcLabel.swift in Sources */,
 				697B134825747D530031E7DB /* AppDelegate.swift in Sources */,
+				69DC21EF257C1900004564E7 /* LoanViewController.swift in Sources */,
 				697B135225747D530031E7DB /* FinancialCalc.xcdatamodeld in Sources */,
 				69FAFB9A257BFD6A00864E00 /* MortgageViewController.swift in Sources */,
 				69589A662578FDB100FCE575 /* FinCalcFonts.swift in Sources */,
 				69589A9125792C7900FCE575 /* CustomViewController.swift in Sources */,
+				69DC21ED257C18D5004564E7 /* CompoundSavingsViewController.swift in Sources */,
 				69589A682578FDE000FCE575 /* FinCalcTypoStyle.swift in Sources */,
 				69589A972579401100FCE575 /* HomeCollectionViewCell.swift in Sources */,
 				697B134A25747D530031E7DB /* SceneDelegate.swift in Sources */,

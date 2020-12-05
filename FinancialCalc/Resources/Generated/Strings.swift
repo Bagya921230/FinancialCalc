@@ -37,6 +37,10 @@ internal enum L10n {
   internal static let greetingText = L10n.tr("Localizable", "greeting_text")
   /// Interest Rate
   internal static let interestText = L10n.tr("Localizable", "interest_text")
+  /// Loan Amount
+  internal static let loanValueText = L10n.tr("Localizable", "loan_value_text")
+  /// Payment
+  internal static let paymentValueText = L10n.tr("Localizable", "payment_value_text")
   /// Present Value
   internal static let presentValueText = L10n.tr("Localizable", "present_value_text")
   /// RESET

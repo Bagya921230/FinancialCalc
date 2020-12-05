@@ -19,7 +19,7 @@ dynamic_text2 = "bla bla bla2";
 dynamic_text3 = "bla bla bla3";
 dynamic_text4 = "bla bla bla4";
 
-//Savings screen
+//Investment screen
 present_value_text = "Present Value";
 future_value_text = "Future Value";
 interest_text = "Interest Rate";
@@ -28,4 +28,6 @@ compounds_text = "Compounds Per Year";
 reset_btn_text = "RESET";
 calculate_btn_text = "CALCULATE";
 
-
+//Mortgage screen
+loan_value_text = "Loan Amount";
+payment_value_text = "Payment";

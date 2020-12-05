@@ -33,15 +33,15 @@
                                     <action selector="continueAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wzw-QF-B60"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gear" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Yyc-t4-SEy">
-                                <rect key="frame" x="40" y="190" width="295" height="200.5"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compoundIntesrest" translatesAutoresizingMaskIntoConstraints="NO" id="Yyc-t4-SEy">
+                                <rect key="frame" x="40" y="190" width="295" height="200"/>
                                 <color key="tintColor" red="0.59607843140000005" green="0.41176470590000003" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="Q2S-Hi-RG0"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Content light" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mrH-m2-uC3" customClass="FinCalcLabel" customModule="FinancialCalc" customModuleProvider="target">
-                                <rect key="frame" x="24" y="410" width="327" height="20.5"/>
+                                <rect key="frame" x="24" y="546.5" width="327" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -72,10 +72,10 @@
                             <constraint firstItem="Yyc-t4-SEy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="D2X-aX-cnw"/>
                             <constraint firstItem="tef-fu-CDw" firstAttribute="top" secondItem="4bh-iK-6Fa" secondAttribute="bottom" constant="5" id="ERg-Ki-8aB"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mrH-m2-uC3" secondAttribute="trailing" constant="24" id="NS9-xg-n1x"/>
+                            <constraint firstItem="2IO-rb-Jh2" firstAttribute="top" secondItem="mrH-m2-uC3" secondAttribute="bottom" constant="20" id="QJa-We-TNO"/>
                             <constraint firstItem="mrH-m2-uC3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="UvT-ja-vNr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4bh-iK-6Fa" secondAttribute="trailing" constant="24" id="Xon-yW-Ory"/>
                             <constraint firstItem="2IO-rb-Jh2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="Xpz-Ws-zjT"/>
-                            <constraint firstItem="mrH-m2-uC3" firstAttribute="top" secondItem="Yyc-t4-SEy" secondAttribute="bottom" constant="20" id="bWS-Pv-W2u"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Yyc-t4-SEy" secondAttribute="trailing" constant="40" id="dyO-s7-GEK"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tef-fu-CDw" secondAttribute="trailing" constant="24" id="kHb-zN-5Ar"/>
                             <constraint firstItem="4bh-iK-6Fa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="r7Q-RL-wdS"/>
@@ -249,10 +249,10 @@
             </objects>
             <point key="canvasLocation" x="1961" y="42"/>
         </scene>
-        <!--View Controller-->
+        <!--Compound Savings View Controller-->
         <scene sceneID="9ku-of-7cW">
             <objects>
-                <viewController id="lLN-Ya-nBH" sceneMemberID="viewController">
+                <viewController id="lLN-Ya-nBH" customClass="CompoundSavingsViewController" customModule="FinancialCalc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0Ub-Sf-guI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -264,7 +264,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="w1F-Mk-OZy">
-                                <rect key="frame" x="20" y="74" width="335" height="314"/>
+                                <rect key="frame" x="20" y="74" width="335" height="380"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S2R-0Z-Ux4" customClass="FinCalcTextField" customModule="FinancialCalc" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="50"/>
@@ -298,7 +298,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gLT-Ws-3AB">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gLT-Ws-3AB" customClass="FinCalcTextField" customModule="FinancialCalc" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="264" width="335" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="B7q-LK-2oj"/>
@@ -306,25 +306,40 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4PD-L1-swg" customClass="FinCalcTextField" customModule="FinancialCalc" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="330" width="335" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="eQD-th-Zrl"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fwX-Z2-KoE" customClass="PrimaryButton" customModule="FinancialCalc" customModuleProvider="target">
-                                <rect key="frame" x="20" y="408" width="335" height="50"/>
+                                <rect key="frame" x="20" y="474" width="335" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="eNl-lo-Zgo"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="resetAction:" destination="lLN-Ya-nBH" eventType="touchUpInside" id="NLz-9Q-MLy"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DPt-Gk-RC5">
-                                <rect key="frame" x="20" y="468" width="335" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DPt-Gk-RC5" customClass="PrimaryButton" customModule="FinancialCalc" customModuleProvider="target">
+                                <rect key="frame" x="20" y="534" width="335" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="XmX-gR-bTa"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="calculateAction:" destination="lLN-Ya-nBH" eventType="touchUpInside" id="sEp-6G-TU6"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="fwX-Z2-KoE" firstAttribute="top" secondItem="w1F-Mk-OZy" secondAttribute="bottom" constant="20" id="0d5-bZ-TpP"/>
                             <constraint firstItem="DPt-Gk-RC5" firstAttribute="leading" secondItem="az0-gc-zim" secondAttribute="leading" constant="20" id="El6-u0-L7b"/>
                             <constraint firstItem="XRW-EM-puR" firstAttribute="leading" secondItem="az0-gc-zim" secondAttribute="leading" constant="20" id="Kcv-Uw-2dN"/>
                             <constraint firstItem="fwX-Z2-KoE" firstAttribute="leading" secondItem="az0-gc-zim" secondAttribute="leading" constant="20" id="MUa-8F-sKq"/>
@@ -335,7 +350,6 @@
                             <constraint firstItem="XRW-EM-puR" firstAttribute="top" secondItem="az0-gc-zim" secondAttribute="top" constant="20" id="bHv-Uk-ITV"/>
                             <constraint firstItem="az0-gc-zim" firstAttribute="trailing" secondItem="XRW-EM-puR" secondAttribute="trailing" constant="20" id="jpo-Xz-XsS"/>
                             <constraint firstItem="w1F-Mk-OZy" firstAttribute="leading" secondItem="az0-gc-zim" secondAttribute="leading" constant="20" id="rBG-o3-fAS"/>
-                            <constraint firstItem="fwX-Z2-KoE" firstAttribute="top" secondItem="w1F-Mk-OZy" secondAttribute="bottom" constant="20" id="tc8-L4-qet"/>
                             <constraint firstItem="az0-gc-zim" firstAttribute="trailing" secondItem="fwX-Z2-KoE" secondAttribute="trailing" constant="20" id="x8v-TE-YKz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="az0-gc-zim"/>
@@ -343,6 +357,17 @@
                     <tabBarItem key="tabBarItem" title="" image="iconCompound" id="yMU-gP-baw">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="-1" vertical="17"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="answerLabel" destination="XRW-EM-puR" id="cln-wI-7b6"/>
+                        <outlet property="calculateButton" destination="DPt-Gk-RC5" id="6E2-5r-d6Q"/>
+                        <outlet property="contributionPaymentTextField" destination="aS2-o8-lY3" id="l05-He-MgP"/>
+                        <outlet property="futureValueTextField" destination="pKM-lX-QTx" id="pBa-A9-aHu"/>
+                        <outlet property="interestTextField" destination="plW-mG-ICa" id="vlm-di-Fe0"/>
+                        <outlet property="noOfCompoundsTextField" destination="4PD-L1-swg" id="iT8-RE-fNR"/>
+                        <outlet property="presentValueTextField" destination="S2R-0Z-Ux4" id="3OB-y7-pD1"/>
+                        <outlet property="resetButton" destination="fwX-Z2-KoE" id="HLE-uu-gUg"/>
+                        <outlet property="yearsTextField" destination="gLT-Ws-3AB" id="PlC-9R-WVl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qib-Oe-Uqv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -351,7 +376,7 @@
         <!--Savings-->
         <scene sceneID="fRV-YO-HjM">
             <objects>
-                <viewController title="Savings" id="enK-BR-w75" customClass="SavingsViewController" customModule="FinancialCalc" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Savings" id="enK-BR-w75" customClass="InvestmentViewController" customModule="FinancialCalc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7ji-Vw-Hlm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -463,6 +488,24 @@
             </objects>
             <point key="canvasLocation" x="3928.8000000000002" y="-930.58470764617698"/>
         </scene>
+        <!--Payment Details View Controller-->
+        <scene sceneID="BAh-0J-Gsf">
+            <objects>
+                <viewController id="fFF-eP-M3o" customClass="PaymentDetailsViewController" customModule="FinancialCalc" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bcp-xp-QLJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="ASe-lq-Ruk"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="VE6-fG-CyE">
+                        <barButtonItem key="backBarButtonItem" title=" " id="om1-Zd-XSn"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X7L-vM-bTh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5850" y="327"/>
+        </scene>
         <!--Tab Bar View Controller-->
         <scene sceneID="mbB-E1-Ta3">
             <objects>
@@ -489,14 +532,101 @@
             </objects>
             <point key="canvasLocation" x="3596" y="-8.5457271364317844"/>
         </scene>
-        <!--View Controller-->
+        <!--Mortgage View Controller-->
         <scene sceneID="qUK-HA-DrK">
             <objects>
-                <viewController id="nc2-iW-28m" sceneMemberID="viewController">
+                <viewController id="nc2-iW-28m" customClass="MortgageViewController" customModule="FinancialCalc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Cu6-IB-k2Z">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BPb-sr-QFl" customClass="FinCalcLabel" customModule="FinancialCalc" customModuleProvider="target">
+                                <rect key="frame" x="20" y="64" width="335" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="yRW-J3-9P3">
+                                <rect key="frame" x="20" y="74" width="335" height="342"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L3l-1Y-sus" customClass="FinCalcTextField" customModule="FinancialCalc" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="ITI-d9-23J"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lRw-Ih-0Sj" customClass="FinCalcTextField" customModule="FinancialCalc" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="73" width="335" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="ovP-bI-a3i"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6TN-mY-W1X" customClass="FinCalcTextField" customModule="FinancialCalc" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="146" width="335" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="xzs-3W-EhA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uq2-Sv-Eui" customClass="FinCalcTextField" customModule="FinancialCalc" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="219" width="335" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="gxX-ub-G2j"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pp9-PL-hST" customClass="FinCalcTextField" customModule="FinancialCalc" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="292" width="335" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="wSP-Wg-gj9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yWQ-l2-jmY" customClass="PrimaryButton" customModule="FinancialCalc" customModuleProvider="target">
+                                <rect key="frame" x="20" y="436" width="335" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="dB2-zn-iqI"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="resetAction:" destination="nc2-iW-28m" eventType="touchUpInside" id="y1E-Dy-xaa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xrI-CF-shU" customClass="PrimaryButton" customModule="FinancialCalc" customModuleProvider="target">
+                                <rect key="frame" x="20" y="496" width="335" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="42Z-kY-VFX"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="calculateAction:" destination="nc2-iW-28m" eventType="touchUpInside" id="QJC-Cm-jTw"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="m0s-8l-OkC" firstAttribute="trailing" secondItem="BPb-sr-QFl" secondAttribute="trailing" constant="20" id="7NG-NL-QFc"/>
+                            <constraint firstItem="yRW-J3-9P3" firstAttribute="top" secondItem="BPb-sr-QFl" secondAttribute="bottom" constant="10" id="83v-Go-Omh"/>
+                            <constraint firstItem="xrI-CF-shU" firstAttribute="top" secondItem="yWQ-l2-jmY" secondAttribute="bottom" constant="10" id="92t-1P-2jl"/>
+                            <constraint firstItem="m0s-8l-OkC" firstAttribute="trailing" secondItem="xrI-CF-shU" secondAttribute="trailing" constant="20" id="HDY-4z-w4F"/>
+                            <constraint firstItem="xrI-CF-shU" firstAttribute="leading" secondItem="m0s-8l-OkC" secondAttribute="leading" constant="20" id="HYP-Ym-UwM"/>
+                            <constraint firstItem="yWQ-l2-jmY" firstAttribute="leading" secondItem="m0s-8l-OkC" secondAttribute="leading" constant="20" id="IUb-3o-pyN"/>
+                            <constraint firstItem="BPb-sr-QFl" firstAttribute="leading" secondItem="m0s-8l-OkC" secondAttribute="leading" constant="20" id="SXi-Ta-HrD"/>
+                            <constraint firstItem="yWQ-l2-jmY" firstAttribute="top" secondItem="yRW-J3-9P3" secondAttribute="bottom" constant="20" id="YMB-fY-yEP"/>
+                            <constraint firstItem="yRW-J3-9P3" firstAttribute="leading" secondItem="m0s-8l-OkC" secondAttribute="leading" constant="20" id="h8F-gl-Ehe"/>
+                            <constraint firstItem="m0s-8l-OkC" firstAttribute="trailing" secondItem="yWQ-l2-jmY" secondAttribute="trailing" constant="20" id="lBJ-Tm-i10"/>
+                            <constraint firstItem="m0s-8l-OkC" firstAttribute="trailing" secondItem="yRW-J3-9P3" secondAttribute="trailing" constant="20" id="qsZ-gk-Ex3"/>
+                            <constraint firstItem="BPb-sr-QFl" firstAttribute="top" secondItem="m0s-8l-OkC" secondAttribute="top" constant="20" id="xV9-A6-J9K"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="m0s-8l-OkC"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="iconMortgage" id="t19-9v-H6F">
@@ -504,68 +634,129 @@
                         <offsetWrapper key="titlePositionAdjustment" horizontal="-1" vertical="17"/>
                     </tabBarItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="answerLabel" destination="BPb-sr-QFl" id="ZzT-x2-UpR"/>
+                        <outlet property="calculateButton" destination="xrI-CF-shU" id="jDv-SF-2bb"/>
+                        <outlet property="interestTextField" destination="lRw-Ih-0Sj" id="Xf2-OX-24u"/>
+                        <outlet property="loanAmountTextField" destination="L3l-1Y-sus" id="hqS-I6-0xf"/>
+                        <outlet property="noOfCompoundsTextField" destination="pp9-PL-hST" id="c3z-Fp-vWy"/>
+                        <outlet property="paymentTextField" destination="6TN-mY-W1X" id="bVc-BO-vSQ"/>
+                        <outlet property="resetButton" destination="yWQ-l2-jmY" id="kWo-sp-VyR"/>
+                        <outlet property="yearsTextField" destination="uq2-Sv-Eui" id="UIT-rx-QAJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rS2-d4-IHO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3036" y="759"/>
+            <point key="canvasLocation" x="3985" y="722"/>
         </scene>
-        <!--View Controller-->
+        <!--Loan View Controller-->
         <scene sceneID="Xn2-AO-yaW">
             <objects>
-                <viewController id="q8l-mL-sM2" sceneMemberID="viewController">
+                <viewController id="q8l-mL-sM2" customClass="LoanViewController" customModule="FinancialCalc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ttB-3K-9Ex">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IMW-2z-VNo" customClass="FinCalcLabel" customModule="FinancialCalc" customModuleProvider="target">
-                                <rect key="frame" x="20" y="64" width="335" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IMW-2z-VNo" customClass="FinCalcLabel" customModule="FinancialCalc" customModuleProvider="target">
+                                <rect key="frame" x="20" y="64" width="335" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H5K-RI-hqw" customClass="FinCalcTextField" customModule="FinancialCalc" customModuleProvider="target">
-                                <rect key="frame" x="33" y="115" width="276" height="34"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="0UA-1N-fSj">
+                                <rect key="frame" x="20" y="74" width="335" height="310"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H5K-RI-hqw" customClass="FinCalcTextField" customModule="FinancialCalc" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="LpO-WD-1K6"/>
+                                            <constraint firstAttribute="height" constant="50" id="fPU-as-PGA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dZ7-Rx-QiF" customClass="FinCalcTextField" customModule="FinancialCalc" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="65" width="335" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="bck-BO-0hb"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h5o-g2-EDK" customClass="FinCalcTextField" customModule="FinancialCalc" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="130" width="335" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="pGP-eK-yH9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kZA-Mb-p2j" customClass="FinCalcTextField" customModule="FinancialCalc" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="195" width="335" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="02I-3P-sit"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BhG-Ca-sIQ" customClass="FinCalcTextField" customModule="FinancialCalc" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="260" width="335" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="y8v-4t-9GD"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="znQ-EV-wao" customClass="PrimaryButton" customModule="FinancialCalc" customModuleProvider="target">
+                                <rect key="frame" x="20" y="404" width="335" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="LpO-WD-1K6"/>
-                                    <constraint firstAttribute="height" constant="50" id="fPU-as-PGA"/>
+                                    <constraint firstAttribute="height" constant="50" id="ErR-9c-joJ"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dZ7-Rx-QiF" customClass="FinCalcTextField" customModule="FinancialCalc" customModuleProvider="target">
-                                <rect key="frame" x="43" y="177" width="97" height="34"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="resetAction:" destination="q8l-mL-sM2" eventType="touchUpInside" id="LxC-JC-bIh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vye-N9-Caw" customClass="PrimaryButton" customModule="FinancialCalc" customModuleProvider="target">
+                                <rect key="frame" x="20" y="464" width="335" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="bck-BO-0hb"/>
+                                    <constraint firstAttribute="height" constant="50" id="vQr-ti-eXd"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h5o-g2-EDK" customClass="FinCalcTextField" customModule="FinancialCalc" customModuleProvider="target">
-                                <rect key="frame" x="43" y="237" width="97" height="34"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="calculateAction:" destination="q8l-mL-sM2" eventType="touchUpInside" id="IRY-d4-tJk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Osa-5y-cvO" customClass="PrimaryButton" customModule="FinancialCalc" customModuleProvider="target">
+                                <rect key="frame" x="20" y="524" width="335" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="pGP-eK-yH9"/>
+                                    <constraint firstAttribute="height" constant="50" id="3FG-Zl-ltu"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kZA-Mb-p2j" customClass="FinCalcTextField" customModule="FinancialCalc" customModuleProvider="target">
-                                <rect key="frame" x="43" y="295" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BhG-Ca-sIQ" customClass="FinCalcTextField" customModule="FinancialCalc" customModuleProvider="target">
-                                <rect key="frame" x="43" y="353" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="showDetailAction:" destination="q8l-mL-sM2" eventType="touchUpInside" id="gLr-Tw-BdD"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="IMW-2z-VNo" firstAttribute="leading" secondItem="om3-Ra-qjW" secondAttribute="leading" constant="20" id="5P7-93-WQf"/>
                             <constraint firstItem="IMW-2z-VNo" firstAttribute="top" secondItem="om3-Ra-qjW" secondAttribute="top" constant="20" id="9hB-aC-Fed"/>
+                            <constraint firstItem="0UA-1N-fSj" firstAttribute="top" secondItem="IMW-2z-VNo" secondAttribute="bottom" constant="10" id="Aus-i8-zYw"/>
+                            <constraint firstItem="znQ-EV-wao" firstAttribute="leading" secondItem="om3-Ra-qjW" secondAttribute="leading" constant="20" id="G5Z-9X-Uaw"/>
+                            <constraint firstItem="0UA-1N-fSj" firstAttribute="leading" secondItem="om3-Ra-qjW" secondAttribute="leading" constant="20" id="K8N-Fx-AXw"/>
                             <constraint firstItem="om3-Ra-qjW" firstAttribute="trailing" secondItem="IMW-2z-VNo" secondAttribute="trailing" constant="20" id="ODg-2o-Cpq"/>
+                            <constraint firstItem="om3-Ra-qjW" firstAttribute="trailing" secondItem="znQ-EV-wao" secondAttribute="trailing" constant="20" id="QfS-kd-gxO"/>
+                            <constraint firstItem="om3-Ra-qjW" firstAttribute="trailing" secondItem="0UA-1N-fSj" secondAttribute="trailing" constant="20" id="RKG-uY-AsO"/>
+                            <constraint firstItem="znQ-EV-wao" firstAttribute="top" secondItem="0UA-1N-fSj" secondAttribute="bottom" constant="20" id="Rlz-7a-vFv"/>
+                            <constraint firstItem="om3-Ra-qjW" firstAttribute="trailing" secondItem="Osa-5y-cvO" secondAttribute="trailing" constant="20" id="UAG-GO-hAy"/>
+                            <constraint firstItem="Osa-5y-cvO" firstAttribute="top" secondItem="vye-N9-Caw" secondAttribute="bottom" constant="10" id="VrE-R8-BPn"/>
+                            <constraint firstItem="Osa-5y-cvO" firstAttribute="leading" secondItem="om3-Ra-qjW" secondAttribute="leading" constant="20" id="W3f-hZ-fVw"/>
+                            <constraint firstItem="vye-N9-Caw" firstAttribute="leading" secondItem="om3-Ra-qjW" secondAttribute="leading" constant="20" id="hjw-xe-5pa"/>
+                            <constraint firstItem="vye-N9-Caw" firstAttribute="top" secondItem="znQ-EV-wao" secondAttribute="bottom" constant="10" id="qBc-Fi-Udr"/>
+                            <constraint firstItem="om3-Ra-qjW" firstAttribute="trailing" secondItem="vye-N9-Caw" secondAttribute="trailing" constant="20" id="rB3-TO-hPn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="om3-Ra-qjW"/>
                     </view>
@@ -573,6 +764,18 @@
                         <offsetWrapper key="titlePositionAdjustment" horizontal="-1" vertical="17"/>
                     </tabBarItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="answerLabel" destination="IMW-2z-VNo" id="FyQ-N0-kSk"/>
+                        <outlet property="calculateButton" destination="vye-N9-Caw" id="YKI-lV-CAf"/>
+                        <outlet property="detailsButton" destination="Osa-5y-cvO" id="zDC-PH-eVX"/>
+                        <outlet property="interestTextField" destination="dZ7-Rx-QiF" id="InM-bE-Xc0"/>
+                        <outlet property="loanAmountTextField" destination="H5K-RI-hqw" id="8Yd-OL-fhz"/>
+                        <outlet property="noOfCompoundsTextField" destination="BhG-Ca-sIQ" id="a7B-hG-Ow0"/>
+                        <outlet property="paymentTextField" destination="h5o-g2-EDK" id="eYg-WV-EeG"/>
+                        <outlet property="resetButton" destination="znQ-EV-wao" id="1wt-Mf-WBd"/>
+                        <outlet property="yearsTextField" destination="kZA-Mb-p2j" id="Pbs-qH-bEF"/>
+                        <segue destination="fFF-eP-M3o" kind="show" identifier="seguePaymentDetail" id="7ED-vE-UG2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZUd-VE-RTs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -604,7 +807,7 @@
     </scenes>
     <resources>
         <image name="arrow.left" catalog="system" width="64" height="48"/>
-        <image name="gear" catalog="system" width="64" height="58"/>
+        <image name="compoundIntesrest" width="112.5" height="87.5"/>
         <image name="iconCompound" width="43.5" height="43.5"/>
         <image name="iconLoan" width="60" height="60"/>
         <image name="iconMortgage" width="40" height="40"/>

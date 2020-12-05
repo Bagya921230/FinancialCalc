@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SavingsViewController: CustomViewController {
+class InvestmentViewController: CustomViewController {
 
     @IBOutlet weak var resetButton: PrimaryButton!
     @IBOutlet weak var calculateButton: PrimaryButton!
@@ -177,7 +177,7 @@ class SavingsViewController: CustomViewController {
     
 }
 
-extension SavingsViewController: FinCalcTextFieldDelegate {
+extension InvestmentViewController: FinCalcTextFieldDelegate {
     func finCalcTextFieldDidTextChanged(_ finCalcTextField: FinCalcTextField, for text: String) {
         isError = false
         resultString = ""
