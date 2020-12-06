@@ -24,7 +24,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2IO-rb-Jh2" customClass="PrimaryButton" customModule="FinancialCalc" customModuleProvider="target">
                                 <rect key="frame" x="24" y="587" width="327" height="50"/>
-                                <color key="backgroundColor" red="0.59607843137254901" green="0.41176470588235292" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.5490196078431373" green="0.0" blue="0.27058823529411763" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="we9-30-quu"/>
                                 </constraints>
@@ -33,11 +33,11 @@
                                     <action selector="continueAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wzw-QF-B60"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compoundIntesrest" translatesAutoresizingMaskIntoConstraints="NO" id="Yyc-t4-SEy">
-                                <rect key="frame" x="40" y="190" width="295" height="200"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back1" translatesAutoresizingMaskIntoConstraints="NO" id="Yyc-t4-SEy">
+                                <rect key="frame" x="40" y="190" width="295" height="250"/>
                                 <color key="tintColor" red="0.59607843140000005" green="0.41176470590000003" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="Q2S-Hi-RG0"/>
+                                    <constraint firstAttribute="height" constant="250" id="Q2S-Hi-RG0"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Content light" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mrH-m2-uC3" customClass="FinCalcLabel" customModule="FinancialCalc" customModuleProvider="target">
@@ -64,7 +64,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="4bh-iK-6Fa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="5YM-6T-l7w"/>
                             <constraint firstItem="Yyc-t4-SEy" firstAttribute="top" secondItem="tef-fu-CDw" secondAttribute="bottom" constant="50" id="8IF-vr-O0B"/>
@@ -316,12 +316,14 @@
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fwX-Z2-KoE" customClass="PrimaryButton" customModule="FinancialCalc" customModuleProvider="target">
-                                <rect key="frame" x="20" y="474" width="335" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fwX-Z2-KoE">
+                                <rect key="frame" x="309" y="474" width="46" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="eNl-lo-Zgo"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="RESET">
+                                    <color key="titleColor" red="0.21984109769999999" green="0.68792503240000002" blue="0.21947889649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="resetAction:" destination="lLN-Ya-nBH" eventType="touchUpInside" id="NLz-9Q-MLy"/>
                                 </connections>
@@ -342,7 +344,6 @@
                             <constraint firstItem="fwX-Z2-KoE" firstAttribute="top" secondItem="w1F-Mk-OZy" secondAttribute="bottom" constant="20" id="0d5-bZ-TpP"/>
                             <constraint firstItem="DPt-Gk-RC5" firstAttribute="leading" secondItem="az0-gc-zim" secondAttribute="leading" constant="20" id="El6-u0-L7b"/>
                             <constraint firstItem="XRW-EM-puR" firstAttribute="leading" secondItem="az0-gc-zim" secondAttribute="leading" constant="20" id="Kcv-Uw-2dN"/>
-                            <constraint firstItem="fwX-Z2-KoE" firstAttribute="leading" secondItem="az0-gc-zim" secondAttribute="leading" constant="20" id="MUa-8F-sKq"/>
                             <constraint firstItem="az0-gc-zim" firstAttribute="trailing" secondItem="w1F-Mk-OZy" secondAttribute="trailing" constant="20" id="QBd-QR-d3u"/>
                             <constraint firstItem="DPt-Gk-RC5" firstAttribute="top" secondItem="fwX-Z2-KoE" secondAttribute="bottom" constant="10" id="XjH-Ur-fdx"/>
                             <constraint firstItem="w1F-Mk-OZy" firstAttribute="top" secondItem="XRW-EM-puR" secondAttribute="bottom" constant="10" id="YUv-eG-65B"/>
@@ -381,12 +382,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jrM-gr-rgE" customClass="PrimaryButton" customModule="FinancialCalc" customModuleProvider="target">
-                                <rect key="frame" x="20" y="404" width="335" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jrM-gr-rgE">
+                                <rect key="frame" x="309" y="404" width="46" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="0lK-6P-xcb"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="RESET">
+                                    <color key="titleColor" red="0.21984109769999999" green="0.68792503240000002" blue="0.21947889649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="resetAction:" destination="enK-BR-w75" eventType="touchUpInside" id="EIo-Rk-LRr"/>
                                 </connections>
@@ -455,7 +458,6 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="jrM-gr-rgE" firstAttribute="leading" secondItem="ktn-9p-X5p" secondAttribute="leading" constant="20" id="6ht-J0-R4U"/>
                             <constraint firstItem="ktn-9p-X5p" firstAttribute="trailing" secondItem="jrM-gr-rgE" secondAttribute="trailing" constant="20" id="Ml1-QM-CFX"/>
                             <constraint firstItem="ktn-9p-X5p" firstAttribute="trailing" secondItem="sTL-9t-V91" secondAttribute="trailing" constant="20" id="PDD-RW-bms"/>
                             <constraint firstItem="MEB-jj-bwJ" firstAttribute="top" secondItem="ktn-9p-X5p" secondAttribute="top" constant="20" id="Uph-ku-x2n"/>
@@ -488,23 +490,97 @@
             </objects>
             <point key="canvasLocation" x="3928.8000000000002" y="-930.58470764617698"/>
         </scene>
-        <!--Payment Details View Controller-->
+        <!--Amortization Schedule-->
         <scene sceneID="BAh-0J-Gsf">
             <objects>
-                <viewController id="fFF-eP-M3o" customClass="PaymentDetailsViewController" customModule="FinancialCalc" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Amortization Schedule" id="fFF-eP-M3o" customClass="PaymentDetailsViewController" customModule="FinancialCalc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bcp-xp-QLJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8HZ-Mw-CGm">
+                                <rect key="frame" x="10" y="94" width="360" height="524"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="amortCell" id="EI4-1X-Hpr" customClass="AmortizationTableViewCell" customModule="FinancialCalc" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="360" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EI4-1X-Hpr" id="c5x-mC-ZpI">
+                                            <rect key="frame" x="0.0" y="0.0" width="360" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="D4M-Yx-7ON">
+                                                    <rect key="frame" x="0.0" y="11.5" width="360" height="20.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xOR-A7-Z6c" userLabel="Payment Amount" customClass="FinCalcLabel" customModule="FinancialCalc" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="89.5" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Principal Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kvo-bu-CdU" customClass="FinCalcLabel" customModule="FinancialCalc" customModuleProvider="target">
+                                                            <rect key="frame" x="90.5" y="0.0" width="89" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Interest Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z7a-e1-kWQ" customClass="FinCalcLabel" customModule="FinancialCalc" customModuleProvider="target">
+                                                            <rect key="frame" x="180.5" y="0.0" width="89.5" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Balance owed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="frD-jy-apX" customClass="FinCalcLabel" customModule="FinancialCalc" customModuleProvider="target">
+                                                            <rect key="frame" x="271" y="0.0" width="89" height="20.5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="21.5" id="ejg-tZ-40a"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="D4M-Yx-7ON" secondAttribute="trailing" id="JMF-2I-daA"/>
+                                                <constraint firstItem="D4M-Yx-7ON" firstAttribute="centerY" secondItem="c5x-mC-ZpI" secondAttribute="centerY" id="T2D-Zb-beP"/>
+                                                <constraint firstItem="D4M-Yx-7ON" firstAttribute="leading" secondItem="c5x-mC-ZpI" secondAttribute="leading" id="WbP-kg-Su8"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="balanceOwedLabel" destination="frD-jy-apX" id="dYB-o0-xhR"/>
+                                            <outlet property="interestAmountLabel" destination="Z7a-e1-kWQ" id="J9f-N1-dDn"/>
+                                            <outlet property="paymentAmountLabel" destination="xOR-A7-Z6c" id="GJX-EZ-zKo"/>
+                                            <outlet property="principalAmountLabel" destination="kvo-bu-CdU" id="DwI-AS-RZD"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="fFF-eP-M3o" id="lTO-PE-QZB"/>
+                                    <outlet property="delegate" destination="fFF-eP-M3o" id="Bmd-6h-L0u"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="8HZ-Mw-CGm" firstAttribute="leading" secondItem="ASe-lq-Ruk" secondAttribute="leading" constant="10" id="fyn-cH-GNx"/>
+                            <constraint firstItem="ASe-lq-Ruk" firstAttribute="trailing" secondItem="8HZ-Mw-CGm" secondAttribute="trailing" constant="5" id="gCH-df-565"/>
+                            <constraint firstItem="ASe-lq-Ruk" firstAttribute="bottom" secondItem="8HZ-Mw-CGm" secondAttribute="bottom" id="hnS-Yk-ryW"/>
+                            <constraint firstItem="8HZ-Mw-CGm" firstAttribute="top" secondItem="ASe-lq-Ruk" secondAttribute="top" constant="50" id="rn6-8T-PgM"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ASe-lq-Ruk"/>
                     </view>
-                    <navigationItem key="navigationItem" id="VE6-fG-CyE">
+                    <navigationItem key="navigationItem" title="Amortization Schedule" id="VE6-fG-CyE">
                         <barButtonItem key="backBarButtonItem" title=" " id="om1-Zd-XSn"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="8HZ-Mw-CGm" id="2nw-kA-cKg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X7L-vM-bTh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5850" y="327"/>
+            <point key="canvasLocation" x="5848.8000000000002" y="326.98650674662673"/>
         </scene>
         <!--Tab Bar View Controller-->
         <scene sceneID="mbB-E1-Ta3">
@@ -517,9 +593,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="tintColor" red="0.59522982459999996" green="0.41278665409999998" blue="0.80135628169999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.54901960780000003" green="0.0" blue="0.27058823529999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="selectedImageTintColor" red="0.59522982459999996" green="0.41278665409999998" blue="0.80135628169999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.54901960780000003" green="0.0" blue="0.27058823529999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="enK-BR-w75" kind="relationship" relationship="viewControllers" id="bVG-rt-tkJ"/>
@@ -547,7 +623,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="yRW-J3-9P3">
-                                <rect key="frame" x="20" y="74" width="335" height="342"/>
+                                <rect key="frame" x="20" y="74" width="335" height="196"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L3l-1Y-sus" customClass="FinCalcTextField" customModule="FinancialCalc" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="50"/>
@@ -565,44 +641,30 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6TN-mY-W1X" customClass="FinCalcTextField" customModule="FinancialCalc" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="146" width="335" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="xzs-3W-EhA"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uq2-Sv-Eui" customClass="FinCalcTextField" customModule="FinancialCalc" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="219" width="335" height="50"/>
+                                        <rect key="frame" x="0.0" y="146" width="335" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="gxX-ub-G2j"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pp9-PL-hST" customClass="FinCalcTextField" customModule="FinancialCalc" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="292" width="335" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="wSP-Wg-gj9"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yWQ-l2-jmY" customClass="PrimaryButton" customModule="FinancialCalc" customModuleProvider="target">
-                                <rect key="frame" x="20" y="436" width="335" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yWQ-l2-jmY">
+                                <rect key="frame" x="309" y="290" width="46" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="dB2-zn-iqI"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="RESET">
+                                    <color key="titleColor" red="0.21984109769999999" green="0.68792503240000002" blue="0.21947889649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="resetAction:" destination="nc2-iW-28m" eventType="touchUpInside" id="y1E-Dy-xaa"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xrI-CF-shU" customClass="PrimaryButton" customModule="FinancialCalc" customModuleProvider="target">
-                                <rect key="frame" x="20" y="496" width="335" height="50"/>
+                                <rect key="frame" x="20" y="350" width="335" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="42Z-kY-VFX"/>
                                 </constraints>
@@ -619,7 +681,6 @@
                             <constraint firstItem="xrI-CF-shU" firstAttribute="top" secondItem="yWQ-l2-jmY" secondAttribute="bottom" constant="10" id="92t-1P-2jl"/>
                             <constraint firstItem="m0s-8l-OkC" firstAttribute="trailing" secondItem="xrI-CF-shU" secondAttribute="trailing" constant="20" id="HDY-4z-w4F"/>
                             <constraint firstItem="xrI-CF-shU" firstAttribute="leading" secondItem="m0s-8l-OkC" secondAttribute="leading" constant="20" id="HYP-Ym-UwM"/>
-                            <constraint firstItem="yWQ-l2-jmY" firstAttribute="leading" secondItem="m0s-8l-OkC" secondAttribute="leading" constant="20" id="IUb-3o-pyN"/>
                             <constraint firstItem="BPb-sr-QFl" firstAttribute="leading" secondItem="m0s-8l-OkC" secondAttribute="leading" constant="20" id="SXi-Ta-HrD"/>
                             <constraint firstItem="yWQ-l2-jmY" firstAttribute="top" secondItem="yRW-J3-9P3" secondAttribute="bottom" constant="20" id="YMB-fY-yEP"/>
                             <constraint firstItem="yRW-J3-9P3" firstAttribute="leading" secondItem="m0s-8l-OkC" secondAttribute="leading" constant="20" id="h8F-gl-Ehe"/>
@@ -630,7 +691,7 @@
                         <viewLayoutGuide key="safeArea" id="m0s-8l-OkC"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="iconMortgage" id="t19-9v-H6F">
-                        <color key="badgeColor" red="0.59522982459999996" green="0.41278665409999998" blue="0.80135628169999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="badgeColor" red="0.54901960780000003" green="0.0" blue="0.27058823529999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <offsetWrapper key="titlePositionAdjustment" horizontal="-1" vertical="17"/>
                     </tabBarItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -639,8 +700,6 @@
                         <outlet property="calculateButton" destination="xrI-CF-shU" id="jDv-SF-2bb"/>
                         <outlet property="interestTextField" destination="lRw-Ih-0Sj" id="Xf2-OX-24u"/>
                         <outlet property="loanAmountTextField" destination="L3l-1Y-sus" id="hqS-I6-0xf"/>
-                        <outlet property="noOfCompoundsTextField" destination="pp9-PL-hST" id="c3z-Fp-vWy"/>
-                        <outlet property="paymentTextField" destination="6TN-mY-W1X" id="bVc-BO-vSQ"/>
                         <outlet property="resetButton" destination="yWQ-l2-jmY" id="kWo-sp-VyR"/>
                         <outlet property="yearsTextField" destination="uq2-Sv-Eui" id="UIT-rx-QAJ"/>
                     </connections>
@@ -664,7 +723,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="0UA-1N-fSj">
-                                <rect key="frame" x="20" y="74" width="335" height="310"/>
+                                <rect key="frame" x="20" y="74" width="335" height="245"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H5K-RI-hqw" customClass="FinCalcTextField" customModule="FinancialCalc" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="50"/>
@@ -683,16 +742,8 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h5o-g2-EDK" customClass="FinCalcTextField" customModule="FinancialCalc" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="130" width="335" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="pGP-eK-yH9"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kZA-Mb-p2j" customClass="FinCalcTextField" customModule="FinancialCalc" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="195" width="335" height="50"/>
+                                        <rect key="frame" x="0.0" y="130" width="335" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="02I-3P-sit"/>
                                         </constraints>
@@ -700,7 +751,7 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BhG-Ca-sIQ" customClass="FinCalcTextField" customModule="FinancialCalc" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="260" width="335" height="50"/>
+                                        <rect key="frame" x="0.0" y="195" width="335" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="y8v-4t-9GD"/>
                                         </constraints>
@@ -709,18 +760,20 @@
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="znQ-EV-wao" customClass="PrimaryButton" customModule="FinancialCalc" customModuleProvider="target">
-                                <rect key="frame" x="20" y="404" width="335" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="znQ-EV-wao">
+                                <rect key="frame" x="309" y="339" width="46" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="ErR-9c-joJ"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="RESET">
+                                    <color key="titleColor" red="0.21984109769999999" green="0.68792503240000002" blue="0.21947889649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="resetAction:" destination="q8l-mL-sM2" eventType="touchUpInside" id="LxC-JC-bIh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vye-N9-Caw" customClass="PrimaryButton" customModule="FinancialCalc" customModuleProvider="target">
-                                <rect key="frame" x="20" y="464" width="335" height="50"/>
+                                <rect key="frame" x="20" y="399" width="335" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="vQr-ti-eXd"/>
                                 </constraints>
@@ -730,7 +783,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Osa-5y-cvO" customClass="PrimaryButton" customModule="FinancialCalc" customModuleProvider="target">
-                                <rect key="frame" x="20" y="524" width="335" height="50"/>
+                                <rect key="frame" x="20" y="459" width="335" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="3FG-Zl-ltu"/>
                                 </constraints>
@@ -745,7 +798,6 @@
                             <constraint firstItem="IMW-2z-VNo" firstAttribute="leading" secondItem="om3-Ra-qjW" secondAttribute="leading" constant="20" id="5P7-93-WQf"/>
                             <constraint firstItem="IMW-2z-VNo" firstAttribute="top" secondItem="om3-Ra-qjW" secondAttribute="top" constant="20" id="9hB-aC-Fed"/>
                             <constraint firstItem="0UA-1N-fSj" firstAttribute="top" secondItem="IMW-2z-VNo" secondAttribute="bottom" constant="10" id="Aus-i8-zYw"/>
-                            <constraint firstItem="znQ-EV-wao" firstAttribute="leading" secondItem="om3-Ra-qjW" secondAttribute="leading" constant="20" id="G5Z-9X-Uaw"/>
                             <constraint firstItem="0UA-1N-fSj" firstAttribute="leading" secondItem="om3-Ra-qjW" secondAttribute="leading" constant="20" id="K8N-Fx-AXw"/>
                             <constraint firstItem="om3-Ra-qjW" firstAttribute="trailing" secondItem="IMW-2z-VNo" secondAttribute="trailing" constant="20" id="ODg-2o-Cpq"/>
                             <constraint firstItem="om3-Ra-qjW" firstAttribute="trailing" secondItem="znQ-EV-wao" secondAttribute="trailing" constant="20" id="QfS-kd-gxO"/>
@@ -761,6 +813,7 @@
                         <viewLayoutGuide key="safeArea" id="om3-Ra-qjW"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="iconLoan" id="cCP-yE-sxQ">
+                        <color key="badgeColor" red="0.54901960780000003" green="0.0" blue="0.27058823529999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <offsetWrapper key="titlePositionAdjustment" horizontal="-1" vertical="17"/>
                     </tabBarItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -771,7 +824,6 @@
                         <outlet property="interestTextField" destination="dZ7-Rx-QiF" id="InM-bE-Xc0"/>
                         <outlet property="loanAmountTextField" destination="H5K-RI-hqw" id="8Yd-OL-fhz"/>
                         <outlet property="noOfCompoundsTextField" destination="BhG-Ca-sIQ" id="a7B-hG-Ow0"/>
-                        <outlet property="paymentTextField" destination="h5o-g2-EDK" id="eYg-WV-EeG"/>
                         <outlet property="resetButton" destination="znQ-EV-wao" id="1wt-Mf-WBd"/>
                         <outlet property="yearsTextField" destination="kZA-Mb-p2j" id="Pbs-qH-bEF"/>
                         <segue destination="fFF-eP-M3o" kind="show" identifier="seguePaymentDetail" id="7ED-vE-UG2"/>
@@ -790,7 +842,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="barTintColor" red="0.59522982459999996" green="0.41278665409999998" blue="0.80135628169999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.5490196078431373" green="0.0" blue="0.27058823529411763" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
@@ -807,7 +859,7 @@
     </scenes>
     <resources>
         <image name="arrow.left" catalog="system" width="64" height="48"/>
-        <image name="compoundIntesrest" width="112.5" height="87.5"/>
+        <image name="back1" width="313" height="208.5"/>
         <image name="iconCompound" width="43.5" height="43.5"/>
         <image name="iconLoan" width="60" height="60"/>
         <image name="iconMortgage" width="40" height="40"/>

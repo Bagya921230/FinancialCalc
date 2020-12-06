@@ -22,7 +22,7 @@ open class CustomViewController: UIViewController {
     }
     
     private func setupUI() {
-        view.backgroundColor = ColorName.lightGrey.color
+        view.backgroundColor = ColorName.white.color
     }
     
     func setUpKeyboard() {

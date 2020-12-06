@@ -45,6 +45,8 @@
 		697B138025752C860031E7DB /* BebasNeue-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 697B137D25752C860031E7DB /* BebasNeue-Regular.ttf */; };
 		697B138125752C860031E7DB /* BebasNeue-Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 697B137E25752C860031E7DB /* BebasNeue-Book.ttf */; };
 		697B138525752CF90031E7DB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 697B138425752CF90031E7DB /* Localizable.strings */; };
+		698C5B67257CE57A00002534 /* AmortizationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698C5B66257CE57A00002534 /* AmortizationTableViewCell.swift */; };
+		698C5B6A257CF14B00002534 /* Amortization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698C5B69257CF14B00002534 /* Amortization.swift */; };
 		69BAD137257AAF6F00C90649 /* InvestmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69BAD136257AAF6F00C90649 /* InvestmentViewController.swift */; };
 		69DC21ED257C18D5004564E7 /* CompoundSavingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DC21EC257C18D5004564E7 /* CompoundSavingsViewController.swift */; };
 		69DC21EF257C1900004564E7 /* LoanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DC21EE257C1900004564E7 /* LoanViewController.swift */; };
@@ -116,6 +118,8 @@
 		697B137D25752C860031E7DB /* BebasNeue-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BebasNeue-Regular.ttf"; sourceTree = "<group>"; };
 		697B137E25752C860031E7DB /* BebasNeue-Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BebasNeue-Book.ttf"; sourceTree = "<group>"; };
 		697B138425752CF90031E7DB /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		698C5B66257CE57A00002534 /* AmortizationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmortizationTableViewCell.swift; sourceTree = "<group>"; };
+		698C5B69257CF14B00002534 /* Amortization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Amortization.swift; sourceTree = "<group>"; };
 		69BAD136257AAF6F00C90649 /* InvestmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentViewController.swift; sourceTree = "<group>"; };
 		69DC21EC257C18D5004564E7 /* CompoundSavingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompoundSavingsViewController.swift; sourceTree = "<group>"; };
 		69DC21EE257C1900004564E7 /* LoanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoanViewController.swift; sourceTree = "<group>"; };
@@ -295,6 +299,7 @@
 		697B134625747D530031E7DB /* FinancialCalc */ = {
 			isa = PBXGroup;
 			children = (
+				698C5B68257CF11B00002534 /* Model */,
 				69589A572578F8D900FCE575 /* App */,
 				69589A5A2578F9CD00FCE575 /* UI */,
 				69589A5B2578F9F300FCE575 /* Extensions */,
@@ -359,6 +364,14 @@
 			path = Strings;
 			sourceTree = "<group>";
 		};
+		698C5B68257CF11B00002534 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				698C5B69257CF14B00002534 /* Amortization.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		69DC21F0257C1BB2004564E7 /* Investment */ = {
 			isa = PBXGroup;
 			children = (
@@ -413,6 +426,7 @@
 			isa = PBXGroup;
 			children = (
 				69DC21F7257C37E4004564E7 /* PaymentDetailsViewController.swift */,
+				698C5B66257CE57A00002534 /* AmortizationTableViewCell.swift */,
 			);
 			path = PaymentDetails;
 			sourceTree = "<group>";
@@ -685,8 +699,10 @@
 				69188CDF257A94020008F976 /* TabBarViewController.swift in Sources */,
 				69589A7E2579087300FCE575 /* UIFontExtension.swift in Sources */,
 				69589A76257903BB00FCE575 /* Colors.swift in Sources */,
+				698C5B67257CE57A00002534 /* AmortizationTableViewCell.swift in Sources */,
 				69BAD137257AAF6F00C90649 /* InvestmentViewController.swift in Sources */,
 				69589A78257904FB00FCE575 /* FinCalcTextField.swift in Sources */,
+				698C5B6A257CF14B00002534 /* Amortization.swift in Sources */,
 				69589A74257903BB00FCE575 /* Strings.swift in Sources */,
 				69589A8D2579219900FCE575 /* UIViewExtension.swift in Sources */,
 				697B134C25747D530031E7DB /* ViewController.swift in Sources */,

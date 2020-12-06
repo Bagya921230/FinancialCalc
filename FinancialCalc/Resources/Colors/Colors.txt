@@ -1,5 +1,5 @@
-Primary			: #9869CC
-Secoandary      : #FFD500
+Primary			: #8C0045
+Secoandary      : #ec7d2c
 White           : #FFFFFF
 Black           : #111111
 LightGrey      : #EEEEEE

@@ -23,7 +23,9 @@ internal enum L10n {
   internal static let compoundsText = L10n.tr("Localizable", "compounds_text")
   /// CONTINUE
   internal static let continueText = L10n.tr("Localizable", "continue_text")
-  /// You do not have any email addresses in your account. Please enter your email address to receive the receipt
+  /// Monthly contribution
+  internal static let contributionValueText = L10n.tr("Localizable", "contribution_value_text")
+  /// Solve all your financial math at one place. Nothing matters more..Calculations for Loans, Investments, Mortgage, Savings etc..
   internal static let dynamicText1 = L10n.tr("Localizable", "dynamic_text1")
   /// bla bla bla2
   internal static let dynamicText2 = L10n.tr("Localizable", "dynamic_text2")

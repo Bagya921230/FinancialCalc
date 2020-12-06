@@ -10,7 +10,7 @@ import UIKit
 
 class InvestmentViewController: CustomViewController {
 
-    @IBOutlet weak var resetButton: PrimaryButton!
+    @IBOutlet weak var resetButton: UIButton!
     @IBOutlet weak var calculateButton: PrimaryButton!
     
     @IBOutlet weak var presentValueTextField: FinCalcTextField!
@@ -44,7 +44,7 @@ class InvestmentViewController: CustomViewController {
         noOfCompoundsTextField.setKeyboard(keyboardType: .numberPad, returnKeyType: .next)
 
         calculateButton.setTitle("CALCULATE")
-        resetButton.setTitle("RESET")
+        resetButton.titleLabel?.text = "RESET"
     }
     
     //MARK:- Calculate on button click
@@ -159,7 +159,8 @@ class InvestmentViewController: CustomViewController {
         let pv : Double = presentValue;
 
         let t = log(fv/pv) / (n * log( 1 + (r/n)))
-        resultString = "YEARS : \(String(format:"%.0f",t))"
+        let totalNumPayment = t * n
+        resultString = "YEARS : \(String(format:"%.0f",t)) \nTOTAL NUMBER OF COMPOUNDS :\(String(format:"%.0f",totalNumPayment))"
         isError = false
         setResult(showError: false)
 

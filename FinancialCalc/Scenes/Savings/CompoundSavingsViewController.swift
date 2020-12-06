@@ -11,7 +11,7 @@ import UIKit
 class CompoundSavingsViewController: UIViewController {
 
     @IBOutlet weak var calculateButton: PrimaryButton!
-    @IBOutlet weak var resetButton: PrimaryButton!
+    @IBOutlet weak var resetButton: UIButton!
     
     @IBOutlet weak var presentValueTextField: FinCalcTextField!
     @IBOutlet weak var futureValueTextField: FinCalcTextField!
@@ -37,7 +37,7 @@ class CompoundSavingsViewController: UIViewController {
         futureValueTextField.setup(placeholder: L10n.futureValueText, delegate: self)
         interestTextField.setup(placeholder: L10n.interestText, delegate: self)
         yearsTextField.setup(placeholder: L10n.yearsText, delegate: self)
-        contributionPaymentTextField.setup(placeholder: L10n.paymentValueText, delegate: self)
+        contributionPaymentTextField.setup(placeholder: L10n.contributionValueText, delegate: self)
         noOfCompoundsTextField.setup(placeholder: L10n.compoundsText, delegate: self)
 
         presentValueTextField.setKeyboard(keyboardType: .decimalPad, returnKeyType: .next)
@@ -48,7 +48,7 @@ class CompoundSavingsViewController: UIViewController {
         noOfCompoundsTextField.setKeyboard(keyboardType: .numberPad, returnKeyType: .next)
 
         calculateButton.setTitle("CALCULATE")
-        resetButton.setTitle("RESET")
+        resetButton.titleLabel?.text = "RESET"
     }
 
 
@@ -77,17 +77,7 @@ class CompoundSavingsViewController: UIViewController {
             isError = false
             setResult(showError: showError)
             return
-        } else if (presentValue > 0 && futureValue > 0 && years > 0 && noOfCompoundsPerYear > 0 && contribution > 0 ) {
-            if (presentValue > futureValue) {
-                resultString = "Initial value should be less than future value"
-                isError = true
-                setResult(showError: showError)
-                return
-            }
-            //can calculate interest rate
-            calculateInterestRate()
-            return
-        } else if (interestRate > 0 && futureValue > 0 && years > 0 && noOfCompoundsPerYear > 0 && contribution > 0) {
+        }else if (interestRate > 0 && futureValue > 0 && years > 0 && noOfCompoundsPerYear > 0 && contribution > 0) {
             //can calculate present value
             calculatePresentValue()
             return
@@ -95,16 +85,9 @@ class CompoundSavingsViewController: UIViewController {
             //can calculate future value
             calculateFutureValue()
             return
-        } else if (interestRate > 0 && presentValue > 0 && futureValue > 0 && noOfCompoundsPerYear > 0 && contribution > 0) {
-            if (presentValue > futureValue) {
-                resultString = "Initial value should be less than future value"
-                isError = true
-                setResult(showError: showError)
-                return
-            }
-            //can calculate years
-            calculateYears()
-            return
+        } else if (interestRate > 0 && presentValue > 0 && years > 0 && noOfCompoundsPerYear > 0 && futureValue > 0){
+            //can calculate monthly contribution needed
+            calculateMonthlyContribution()
         } else {
             resultString = "Insufficient inputs"
             isError = true
@@ -113,15 +96,25 @@ class CompoundSavingsViewController: UIViewController {
         }
     }
     
-    func calculateInterestRate() {
-
-    }
-    
-    func calculateInterestForPrincipal() -> Double{
+    func calculatePresentValue() {
         let n : Double = Double(noOfCompoundsPerYear);
         let t : Double = Double(years);
         let nt : Double = n * t;
         let r : Double = interestRate/100;
+        let fv : Double = futureValue;
+        
+        let sv : Double = calculateSeriesValue()
+        let pv = (fv - sv)/pow( 1 + (r/n),nt)
+        resultString = "INITIAL INVESTMENT VALUE : \(String(format:"%.2f",pv))"
+        isError = false
+        setResult(showError: false)
+    }
+    
+    func calculateInterestForPrincipal() -> Double{
+        let n : Double = Double(noOfCompoundsPerYear)
+        let t : Double = Double(years)
+        let nt : Double = n * t
+        let r : Double = interestRate/100
         let pv : Double = presentValue;
         
         let fv = pv * pow( 1 + (r/n),nt)
@@ -129,16 +122,28 @@ class CompoundSavingsViewController: UIViewController {
     }
     
     func calculateSeriesValue() -> Double {
-        let n : Double = Double(noOfCompoundsPerYear);
-        let t : Double = Double(years);
-        let nt : Double = n * t;
-        let r : Double = interestRate/100;
-        let pv : Double = presentValue;
-        let pmt : Double = contribution;
+        let n : Double = Double(noOfCompoundsPerYear)
+        let t : Double = Double(years)
+        let nt : Double = n * t
+        let r : Double = interestRate/100
+        let pmt : Double = contribution
         
         let sv = pmt * (((pow(1 + (r/n),nt)) - 1 )/(r/n))
         return sv
     }
+    
+    func calculateMonthlyContribution() {
+        let n : Double = Double(noOfCompoundsPerYear)
+        let t : Double = Double(years);
+        let nt : Double = n * t
+        let r : Double = interestRate/100
+        let fv : Double = futureValue
+        let ip : Double = calculateInterestForPrincipal()
+        
+        let mc = (fv - ip) / (((pow(1 + (r/n),nt)) - 1 )/(r/n))
+        resultString = "MONTHLY CONTRIBUTION NEEDED : \(String(format:"%.2f",mc))"
+        isError = false
+        setResult(showError: false)    }
 
     
     func calculateFutureValue() {
@@ -148,10 +153,6 @@ class CompoundSavingsViewController: UIViewController {
         setResult(showError: false)
     }
     
-    func calculatePresentValue() {
-        
-
-    }
     
     func calculateYears() {
         let n : Double = Double(noOfCompoundsPerYear);
@@ -160,7 +161,8 @@ class CompoundSavingsViewController: UIViewController {
         let pv : Double = presentValue;
 
         let t = log(fv/pv) / (n * log( 1 + (r/n)))
-        resultString = "YEARS : \(String(format:"%.0f",t))"
+        let totalNumPayment = t * n
+        resultString = "YEARS : \(String(format:"%.0f",t)) \n TOTAL NUMBER OF PAYMENTS :\(String(format:"%.0f",totalNumPayment))"
         isError = false
         setResult(showError: false)
 

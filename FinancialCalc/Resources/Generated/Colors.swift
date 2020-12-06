@@ -58,15 +58,15 @@ internal struct ColorName {
   /// <span style="display:block;width:3em;height:2em;border:1px solid black;background:#d1d1d6"></span>
   /// Alpha: 100% <br/> (0xd1d1d6ff)
   internal static let placeholder = ColorName(rgbaValue: 0xd1d1d6ff)
-  /// <span style="display:block;width:3em;height:2em;border:1px solid black;background:#9869cc"></span>
-  /// Alpha: 100% <br/> (0x9869ccff)
-  internal static let primary = ColorName(rgbaValue: 0x9869ccff)
+  /// <span style="display:block;width:3em;height:2em;border:1px solid black;background:#8c0045"></span>
+  /// Alpha: 100% <br/> (0x8c0045ff)
+  internal static let primary = ColorName(rgbaValue: 0x8c0045ff)
   /// <span style="display:block;width:3em;height:2em;border:1px solid black;background:#ff9800"></span>
   /// Alpha: 74% <br/> (0xff9800bf)
   internal static let primaryLight = ColorName(rgbaValue: 0xff9800bf)
-  /// <span style="display:block;width:3em;height:2em;border:1px solid black;background:#ffd500"></span>
-  /// Alpha: 100% <br/> (0xffd500ff)
-  internal static let secoandary = ColorName(rgbaValue: 0xffd500ff)
+  /// <span style="display:block;width:3em;height:2em;border:1px solid black;background:#ec7d2c"></span>
+  /// Alpha: 100% <br/> (0xec7d2cff)
+  internal static let secoandary = ColorName(rgbaValue: 0xec7d2cff)
   /// <span style="display:block;width:3em;height:2em;border:1px solid black;background:#d1d1d6"></span>
   /// Alpha: 100% <br/> (0xd1d1d6ff)
   internal static let silver = ColorName(rgbaValue: 0xd1d1d6ff)

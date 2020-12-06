@@ -14,7 +14,7 @@ greeting_text = "WELCOME TO";
 app_name_text1 = "FIN";
 app_name_text2 = "CALC";
 continue_text = "CONTINUE";
-dynamic_text1 = "You do not have any email addresses in your account. Please enter your email address to receive the receipt";
+dynamic_text1 = "Solve all your financial math at one place. Nothing matters more..Calculations for Loans, Investments, Mortgage, Savings etc..";
 dynamic_text2 = "bla bla bla2";
 dynamic_text3 = "bla bla bla3";
 dynamic_text4 = "bla bla bla4";
@@ -31,3 +31,7 @@ calculate_btn_text = "CALCULATE";
 //Mortgage screen
 loan_value_text = "Loan Amount";
 payment_value_text = "Payment";
+
+//Savings screen
+contribution_value_text = "Monthly contribution";
+

@@ -48,18 +48,18 @@ class PrimaryButton: UIButton {
     }
     
     private func updateUI() {
-        backgroundView.backgroundColor = isEnabled ? ColorName.flashGreen.color : ColorName.buttonGrey.color
+        backgroundView.backgroundColor = isEnabled ? ColorName.secoandary.color : ColorName.placeholder.color
         backgroundView.layer.cornerRadius = 5
         let textColor: UIColor
         if !isEnabled {
-            textColor = ColorName.disabledWhite.color
+            textColor = ColorName.white.color
         } else if isHighlighted {
             textColor = ColorName.white.color
         } else {
             textColor = ColorName.white.color
         }
         if isHighlighted {
-            backgroundView.backgroundColor = ColorName.primary.color
+            backgroundView.backgroundColor = ColorName.secoandary.color
         }
         
         buttonTitleLabel.textColor = textColor
