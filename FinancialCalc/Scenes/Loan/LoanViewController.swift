@@ -64,6 +64,7 @@ class LoanViewController: UIViewController {
         noOfCompoundsTextField.text = ""
     }
     
+    //MARK:- Show Amoritization details on click
     @IBAction func showDetailAction(_ sender: Any) {
         performSegue(withIdentifier: "seguePaymentDetail", sender: nil)
     }

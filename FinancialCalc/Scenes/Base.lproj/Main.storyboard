@@ -34,7 +34,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back1" translatesAutoresizingMaskIntoConstraints="NO" id="Yyc-t4-SEy">
-                                <rect key="frame" x="40" y="190" width="295" height="250"/>
+                                <rect key="frame" x="40" y="189.99999999999997" width="295" height="250.00000000000009"/>
                                 <color key="tintColor" red="0.59607843140000005" green="0.41176470590000003" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="250" id="Q2S-Hi-RG0"/>
@@ -608,10 +608,10 @@
             </objects>
             <point key="canvasLocation" x="3596" y="-8.5457271364317844"/>
         </scene>
-        <!--Mortgage View Controller-->
+        <!--segueAmortDetail-->
         <scene sceneID="qUK-HA-DrK">
             <objects>
-                <viewController id="nc2-iW-28m" customClass="MortgageViewController" customModule="FinancialCalc" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="segueAmortDetail" id="nc2-iW-28m" customClass="MortgageViewController" customModule="FinancialCalc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Cu6-IB-k2Z">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -673,16 +673,29 @@
                                     <action selector="calculateAction:" destination="nc2-iW-28m" eventType="touchUpInside" id="QJC-Cm-jTw"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbw-cY-0d0" customClass="PrimaryButton" customModule="FinancialCalc" customModuleProvider="target">
+                                <rect key="frame" x="20" y="410" width="335" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="rzq-RO-Rij"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="showDetails:" destination="nc2-iW-28m" eventType="touchUpInside" id="jgh-vP-E2h"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="fbw-cY-0d0" firstAttribute="top" secondItem="xrI-CF-shU" secondAttribute="bottom" constant="10" id="0Yo-js-fUd"/>
                             <constraint firstItem="m0s-8l-OkC" firstAttribute="trailing" secondItem="BPb-sr-QFl" secondAttribute="trailing" constant="20" id="7NG-NL-QFc"/>
                             <constraint firstItem="yRW-J3-9P3" firstAttribute="top" secondItem="BPb-sr-QFl" secondAttribute="bottom" constant="10" id="83v-Go-Omh"/>
                             <constraint firstItem="xrI-CF-shU" firstAttribute="top" secondItem="yWQ-l2-jmY" secondAttribute="bottom" constant="10" id="92t-1P-2jl"/>
+                            <constraint firstItem="m0s-8l-OkC" firstAttribute="trailing" secondItem="fbw-cY-0d0" secondAttribute="trailing" constant="20" id="B0c-h0-GYW"/>
                             <constraint firstItem="m0s-8l-OkC" firstAttribute="trailing" secondItem="xrI-CF-shU" secondAttribute="trailing" constant="20" id="HDY-4z-w4F"/>
                             <constraint firstItem="xrI-CF-shU" firstAttribute="leading" secondItem="m0s-8l-OkC" secondAttribute="leading" constant="20" id="HYP-Ym-UwM"/>
                             <constraint firstItem="BPb-sr-QFl" firstAttribute="leading" secondItem="m0s-8l-OkC" secondAttribute="leading" constant="20" id="SXi-Ta-HrD"/>
                             <constraint firstItem="yWQ-l2-jmY" firstAttribute="top" secondItem="yRW-J3-9P3" secondAttribute="bottom" constant="20" id="YMB-fY-yEP"/>
+                            <constraint firstItem="fbw-cY-0d0" firstAttribute="leading" secondItem="m0s-8l-OkC" secondAttribute="leading" constant="20" id="dZk-EG-BEo"/>
                             <constraint firstItem="yRW-J3-9P3" firstAttribute="leading" secondItem="m0s-8l-OkC" secondAttribute="leading" constant="20" id="h8F-gl-Ehe"/>
                             <constraint firstItem="m0s-8l-OkC" firstAttribute="trailing" secondItem="yWQ-l2-jmY" secondAttribute="trailing" constant="20" id="lBJ-Tm-i10"/>
                             <constraint firstItem="m0s-8l-OkC" firstAttribute="trailing" secondItem="yRW-J3-9P3" secondAttribute="trailing" constant="20" id="qsZ-gk-Ex3"/>
@@ -698,10 +711,12 @@
                     <connections>
                         <outlet property="answerLabel" destination="BPb-sr-QFl" id="ZzT-x2-UpR"/>
                         <outlet property="calculateButton" destination="xrI-CF-shU" id="jDv-SF-2bb"/>
+                        <outlet property="detailsButton" destination="fbw-cY-0d0" id="YKB-NC-Ijf"/>
                         <outlet property="interestTextField" destination="lRw-Ih-0Sj" id="Xf2-OX-24u"/>
                         <outlet property="loanAmountTextField" destination="L3l-1Y-sus" id="hqS-I6-0xf"/>
                         <outlet property="resetButton" destination="yWQ-l2-jmY" id="kWo-sp-VyR"/>
                         <outlet property="yearsTextField" destination="uq2-Sv-Eui" id="UIT-rx-QAJ"/>
+                        <segue destination="fFF-eP-M3o" kind="show" identifier="segueAmortDetail" id="Be8-Kz-Yiy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rS2-d4-IHO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -866,4 +881,7 @@
         <image name="iconSaving" width="50" height="50"/>
         <image name="pencil.circle.fill" catalog="system" width="64" height="60"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Be8-Kz-Yiy"/>
+    </inferredMetricsTieBreakers>
 </document>

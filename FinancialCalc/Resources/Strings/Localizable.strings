@@ -20,9 +20,9 @@ dynamic_text3 = "bla bla bla3";
 dynamic_text4 = "bla bla bla4";
 
 //Investment screen
-present_value_text = "Present Value";
-future_value_text = "Future Value";
-interest_text = "Interest Rate";
+present_value_text = "Present Value (LKR)";
+future_value_text = "Future Value (LKR)";
+interest_text = "Interest Rate %%";
 years_text = "Years";
 compounds_text = "Compounds Per Year";
 reset_btn_text = "RESET";
@@ -33,5 +33,5 @@ loan_value_text = "Loan Amount";
 payment_value_text = "Payment";
 
 //Savings screen
-contribution_value_text = "Monthly contribution";
+contribution_value_text = "Monthly contribution (LKR)";
 

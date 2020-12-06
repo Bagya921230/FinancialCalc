@@ -12,6 +12,7 @@ class MortgageViewController: CustomViewController {
     
     @IBOutlet weak var calculateButton: PrimaryButton!
     @IBOutlet weak var resetButton: UIButton!
+    @IBOutlet weak var detailsButton: PrimaryButton!
     
     @IBOutlet weak var loanAmountTextField: FinCalcTextField!
     @IBOutlet weak var interestTextField: FinCalcTextField!
@@ -24,6 +25,10 @@ class MortgageViewController: CustomViewController {
     var interestRate : Double = 0
     var resultString : String = "";
     var isError : Bool = false;
+    
+    var resultMonthlyPayment: Double = 0
+    var resultRate: Double = 0
+    var resultLoanValue: Double = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,11 +43,13 @@ class MortgageViewController: CustomViewController {
 
         calculateButton.setTitle("CALCULATE")
         resetButton.titleLabel?.text = "RESET"
+        detailsButton.setTitle("AMORTIZATION SCHEDULE")
+        detailsButton.isEnabled = false
+
     }
     
     //MARK:- Calculate on button click
     @IBAction func calculateAction(_ sender: Any) {
-        //showError - show error only on button click- hide on text edit
         validateData(showError: true)
     }
     
@@ -53,6 +60,10 @@ class MortgageViewController: CustomViewController {
         yearsTextField.text = ""
     }
     
+    //MARK:- Show amortization details on button click
+    @IBAction func showDetails(_ sender: Any) {
+        performSegue(withIdentifier: "segueAmortDetail", sender: nil)
+    }
     func validateData(showError : Bool) {
         isError = false
         resultString = ""
@@ -81,6 +92,11 @@ class MortgageViewController: CustomViewController {
         
         let fv = ((mr * pv ) / (1 - ((pow(1 + mr,((-1)*nt))))) ) * nt
         
+        resultRate = r
+        resultLoanValue = loanValue
+        resultMonthlyPayment = pmt
+        detailsButton.isEnabled = true
+        
         resultString = "MONTHLY PAYMENT : \(String(format:"%.2f",pmt)) \nTOTAL PAYMENT : \(String(format:"%.2f",fv))"
         isError = false
         setResult(showError: false)
@@ -97,12 +113,25 @@ class MortgageViewController: CustomViewController {
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier {
+        case "segueAmortDetail":
+            let vc = segue.destination as! PaymentDetailsViewController
+            vc.loanAmount = resultLoanValue
+            vc.monthlyPayment = resultMonthlyPayment
+            vc.rate = resultRate
+        default:
+            return
+        }
+    }
+    
 }
 
 extension MortgageViewController: FinCalcTextFieldDelegate {
     func finCalcTextFieldDidTextChanged(_ finCalcTextField: FinCalcTextField, for text: String) {
         isError = false
         resultString = ""
+        detailsButton.isEnabled = false
         switch finCalcTextField {
         case loanAmountTextField:
             if let dbVal = Double(text) {
