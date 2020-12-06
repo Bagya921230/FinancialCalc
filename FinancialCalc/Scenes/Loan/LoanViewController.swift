@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import CoreData
 
-class LoanViewController: UIViewController {
+class LoanViewController: CustomViewController {
     
     @IBOutlet weak var calculateButton: PrimaryButton!
     @IBOutlet weak var resetButton: UIButton!
@@ -30,7 +31,15 @@ class LoanViewController: UIViewController {
     var resultMonthlyPayment: Double = 0
     var resultRate: Double = 0
     var resultLoanValue: Double = 0
-
+    
+    var context:NSManagedObjectContext? {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return nil
+        }
+        return appDelegate.persistentContainer.viewContext
+    }
+    var loan: Loan?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
                 
@@ -103,6 +112,11 @@ class LoanViewController: UIViewController {
         detailsButton.isEnabled = true
             
         resultString = "MONTHLY PAYMENT : \(String(format:"%.2f",pmt)) \nTOTAL PAYMENT : \(String(format:"%.2f",fv))"
+        
+        //SAVE TO COREDATA
+        
+        loan = Loan(type: "LOAN", payment: String(format:"%.2f",resultMonthlyPayment), total: String(format:"%.2f",fv), loan: String(format:"%.2f",resultLoanValue), rate: String(format:"%.2f",interestRate), compounds: String(noOfCompoundsPerYear), time: getTodayString(),year: String(years), inserIntoManagedObjectContext: self.context)
+        
         isError = false
         setResult(showError: false)
     }

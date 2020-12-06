@@ -27,7 +27,7 @@ struct FinCalcFonts {
         case .component:
             return bebasNeueBold(size: 10)
         case .componentButtonPrimary:
-            return bebasNeueRegular(size: 21)
+            return bebasNeueBold(size: 21)
         case .componentTextField:
             return robotoMedium(size: 16)
         case .componentTextFieldSmall:

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class MortgageViewController: CustomViewController {
     
@@ -29,6 +30,14 @@ class MortgageViewController: CustomViewController {
     var resultMonthlyPayment: Double = 0
     var resultRate: Double = 0
     var resultLoanValue: Double = 0
+    
+    var context:NSManagedObjectContext? {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return nil
+        }
+        return appDelegate.persistentContainer.viewContext
+    }
+    var loan: Loan?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -98,6 +107,9 @@ class MortgageViewController: CustomViewController {
         detailsButton.isEnabled = true
         
         resultString = "MONTHLY PAYMENT : \(String(format:"%.2f",pmt)) \nTOTAL PAYMENT : \(String(format:"%.2f",fv))"
+        
+        loan = Loan(type: "MORTGAGE", payment: String(format:"%.2f",resultMonthlyPayment), total: String(format:"%.2f",fv), loan: String(format:"%.2f",resultLoanValue), rate: String(format:"%.2f",interestRate), compounds: String(noOfCompoundsPerYear), time: getTodayString(),year: String(years), inserIntoManagedObjectContext: self.context)
+        
         isError = false
         setResult(showError: false)
     }

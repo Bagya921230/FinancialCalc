@@ -7,16 +7,23 @@
 //
 
 import UIKit
+import CoreData
 
 class HomeViewController: CustomViewController {
     
     //MARK: Outlets
     @IBOutlet weak var collectionView: UICollectionView!
-    @IBOutlet weak var gbpLabel: FinCalcLabel!
-    @IBOutlet weak var usdLabel: FinCalcLabel!
-    @IBOutlet weak var audLabel: FinCalcLabel!
+    @IBOutlet weak var descriptionLabel: FinCalcLabel!
     
     var selectedIndex: Int = 0
+    var selectedType: String = ""
+    
+    var context:NSManagedObjectContext? {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return nil
+        }
+        return appDelegate.persistentContainer.viewContext
+    }
     
     var titleList: [String] = ["INVESTMENT","SAVING", "LOANS", "MORTGAGE"]
     var imageList: [UIImage] = [ Asset.saving.image,Asset.compoundIntesrest.image, Asset.loan.image, Asset.mortgage1.image]
@@ -25,19 +32,41 @@ class HomeViewController: CustomViewController {
         super.viewDidLoad()
         collectionView.delegate = self
         collectionView.dataSource = self
-        usdLabel.set( "\u{1F1FA}\u{1F1F8} USD 1.2436", typographyStyle: .content, alignment: .left)
-        gbpLabel.set("\u{1F1EC}\u{1F1E7} GBP 1.3434", typographyStyle: .content, alignment: .left)
-        audLabel.set("\u{1F1E6}\u{1F1FA} AUD 1.3434", typographyStyle: .content, alignment: .left)
-        //collectionView.register(HomeCollectionViewCell.self, forCellWithReuseIdentifier: "HomeCell")
+        descriptionLabel.set("Find past calculation results using below history facility", typographyStyle: .contentWhite, alignment: .center)
     }
     
-
+     //MARK: History Button Actions
+    @IBAction func showLoanHistoryAction(_ sender: Any) {
+        selectedType = "LOAN"
+        performSegue(withIdentifier: "segueHistory", sender: nil)
+    }
+    
+    @IBAction func showMortHistoryAction(_ sender: Any) {
+        selectedType = "MORT"
+        performSegue(withIdentifier: "segueHistory", sender: nil)
+    }
+    
+    @IBAction func showSavingHistoryAction(_ sender: Any) {
+        selectedType = "SAVING"
+        performSegue(withIdentifier: "segueHistory", sender: nil)
+    }
+    
+    @IBAction func showInvestmentHistoryAction(_ sender: Any) {
+        selectedType = "INVESTMENT"
+        performSegue(withIdentifier: "segueHistory", sender: nil)
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch segue.identifier {
         case "segueTabbar":
             let vc = segue.destination as! TabBarViewController
             vc.selectIndex = selectedIndex
             vc.title = titleList[selectedIndex]
+            break
+        case "segueHistory":
+            let vc = segue.destination as! HistoryViewController
+            vc.selectedType = selectedType
+            break
         default:
             return
         }

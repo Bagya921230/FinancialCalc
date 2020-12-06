@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class InvestmentViewController: CustomViewController {
 
@@ -27,6 +28,13 @@ class InvestmentViewController: CustomViewController {
     var interestRate : Double = 0
     var resultString : String = "";
     var isError : Bool = false;
+    
+    var context:NSManagedObjectContext? {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
+            return nil
+        }
+        return appDelegate.persistentContainer.viewContext
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

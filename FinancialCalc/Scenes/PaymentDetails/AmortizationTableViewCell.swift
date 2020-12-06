@@ -9,7 +9,6 @@
 import UIKit
 
 class AmortizationTableViewCell: UITableViewCell {
-    @IBOutlet weak var noLabel: FinCalcLabel!
     @IBOutlet weak var paymentAmountLabel: FinCalcLabel!
     @IBOutlet weak var principalAmountLabel: FinCalcLabel!
     @IBOutlet weak var interestAmountLabel: FinCalcLabel!

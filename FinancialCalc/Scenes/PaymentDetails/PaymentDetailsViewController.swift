@@ -21,6 +21,7 @@ class PaymentDetailsViewController: CustomViewController {
 
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.separatorStyle = .none
         
         setData()
     }

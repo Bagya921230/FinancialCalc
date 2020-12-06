@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import CoreData
 
 class TabBarViewController: UITabBarController, UITabBarControllerDelegate {
     
     var selectIndex: Int = 0
+    var context: NSManagedObjectContext!
 
     override func viewDidLoad() {
         super.viewDidLoad()

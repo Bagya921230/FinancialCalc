@@ -24,7 +24,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2IO-rb-Jh2" customClass="PrimaryButton" customModule="FinancialCalc" customModuleProvider="target">
                                 <rect key="frame" x="24" y="587" width="327" height="50"/>
-                                <color key="backgroundColor" red="0.5490196078431373" green="0.0" blue="0.27058823529411763" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.21984109769999999" green="0.68792503240000002" blue="0.21947889649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="we9-30-quu"/>
                                 </constraints>
@@ -34,7 +34,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back1" translatesAutoresizingMaskIntoConstraints="NO" id="Yyc-t4-SEy">
-                                <rect key="frame" x="40" y="189.99999999999997" width="295" height="250.00000000000009"/>
+                                <rect key="frame" x="40" y="190" width="295" height="250"/>
                                 <color key="tintColor" red="0.59607843140000005" green="0.41176470590000003" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="250" id="Q2S-Hi-RG0"/>
@@ -110,44 +110,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vFL-ZK-XA0">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="exz-Wm-kFo">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
-                                        <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="WMd-5u-udB">
-                                                <rect key="frame" x="20" y="114.5" width="35" height="65.5"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GBP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i6Q-oF-pDu" customClass="FinCalcLabel" customModule="FinancialCalc" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="35" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3sc-jG-lM2" customClass="FinCalcLabel" customModule="FinancialCalc" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="22.5" width="35" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AUD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jt9-hr-kEm" customClass="FinCalcLabel" customModule="FinancialCalc" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="45" width="35" height="20.5"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                            </stackView>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="WMd-5u-udB" secondAttribute="bottom" constant="20" id="6ZS-be-O4i"/>
-                                            <constraint firstItem="WMd-5u-udB" firstAttribute="leading" secondItem="exz-Wm-kFo" secondAttribute="leading" constant="20" id="vfB-Gi-HEj"/>
-                                        </constraints>
-                                    </view>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="l4f-Jx-5g8">
-                                        <rect key="frame" x="15" y="215" width="345" height="437"/>
+                                        <rect key="frame" x="15" y="25" width="345" height="436"/>
                                         <color key="backgroundColor" red="0.82745098039215681" green="0.82745098039215681" blue="0.82745098039215681" alpha="1" colorSpace="calibratedRGB"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="rsY-cK-Iqi">
                                             <size key="itemSize" width="142" height="201"/>
@@ -211,17 +177,121 @@
                                             <outlet property="delegate" destination="dc8-k4-IL4" id="rA7-Nq-v1M"/>
                                         </connections>
                                     </collectionView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f2W-V9-gbA">
+                                        <rect key="frame" x="0.0" y="467.5" width="375" height="155.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back 2" translatesAutoresizingMaskIntoConstraints="NO" id="9eT-4m-aFF">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="155.5"/>
+                                            </imageView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wPF-Ub-xw9">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="155.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="phW-T6-VqL" customClass="FinCalcLabel" customModule="FinancialCalc" customModuleProvider="target">
+                                                        <rect key="frame" x="20" y="80.5" width="335" height="0.0"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="wpf-cU-6gn">
+                                                        <rect key="frame" x="20" y="100.5" width="335" height="30"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AMW-Fn-OEG">
+                                                                <rect key="frame" x="0.0" y="0.0" width="80" height="30"/>
+                                                                <color key="backgroundColor" red="0.21984109769999999" green="0.68792503240000002" blue="0.21947889649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <state key="normal" title="Investment">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="5"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="showInvestmentHistoryAction:" destination="dc8-k4-IL4" eventType="touchUpInside" id="64G-OD-ZEL"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9OE-R8-DlE">
+                                                                <rect key="frame" x="85" y="0.0" width="80" height="30"/>
+                                                                <color key="backgroundColor" red="0.21984109769999999" green="0.68792503240000002" blue="0.21947889649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <state key="normal" title="Loan">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="5"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="showLoanHistoryAction:" destination="dc8-k4-IL4" eventType="touchUpInside" id="hvx-jg-icI"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sfH-Gc-xLK">
+                                                                <rect key="frame" x="170" y="0.0" width="80" height="30"/>
+                                                                <color key="backgroundColor" red="0.21984109769999999" green="0.68792503240000002" blue="0.21947889649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <state key="normal" title="Savings">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="5"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="showSavingHistoryAction:" destination="dc8-k4-IL4" eventType="touchUpInside" id="ENZ-Qj-ngl"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kwV-7n-TOE">
+                                                                <rect key="frame" x="255" y="0.0" width="80" height="30"/>
+                                                                <color key="backgroundColor" red="0.21984109769999999" green="0.68792503240000002" blue="0.21947889649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <state key="normal" title="Mortgage">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="5"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="showMortHistoryAction:" destination="dc8-k4-IL4" eventType="touchUpInside" id="lxp-LL-RdD"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.75655500856164382" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="wpf-cU-6gn" firstAttribute="top" secondItem="phW-T6-VqL" secondAttribute="bottom" constant="20" id="10k-ab-dq7"/>
+                                                    <constraint firstItem="wpf-cU-6gn" firstAttribute="leading" secondItem="wPF-Ub-xw9" secondAttribute="leading" constant="20" id="3Lg-VH-4Rh"/>
+                                                    <constraint firstItem="phW-T6-VqL" firstAttribute="leading" secondItem="wPF-Ub-xw9" secondAttribute="leading" constant="20" id="3yh-Hl-efi"/>
+                                                    <constraint firstAttribute="trailing" secondItem="phW-T6-VqL" secondAttribute="trailing" constant="20" id="70Y-gu-wVZ"/>
+                                                    <constraint firstAttribute="bottom" secondItem="wpf-cU-6gn" secondAttribute="bottom" constant="25" id="BBX-ob-f9d"/>
+                                                    <constraint firstAttribute="trailing" secondItem="wpf-cU-6gn" secondAttribute="trailing" constant="20" id="JlX-yw-O8N"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="9eT-4m-aFF" firstAttribute="top" secondItem="f2W-V9-gbA" secondAttribute="top" id="FB2-rr-gXh"/>
+                                            <constraint firstItem="wPF-Ub-xw9" firstAttribute="top" secondItem="f2W-V9-gbA" secondAttribute="top" id="FU2-iB-SRd"/>
+                                            <constraint firstItem="wPF-Ub-xw9" firstAttribute="leading" secondItem="f2W-V9-gbA" secondAttribute="leading" id="aFP-Be-TZJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="wPF-Ub-xw9" secondAttribute="trailing" id="aZX-g2-kru"/>
+                                            <constraint firstAttribute="bottom" secondItem="wPF-Ub-xw9" secondAttribute="bottom" id="bcO-ab-rwi"/>
+                                            <constraint firstItem="9eT-4m-aFF" firstAttribute="leading" secondItem="f2W-V9-gbA" secondAttribute="leading" id="bnq-et-0fI"/>
+                                            <constraint firstAttribute="bottom" secondItem="9eT-4m-aFF" secondAttribute="bottom" id="kmQ-EU-95f"/>
+                                            <constraint firstAttribute="trailing" secondItem="9eT-4m-aFF" secondAttribute="trailing" id="mwl-ab-oX7"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" red="0.82745098039215681" green="0.82745098039215681" blue="0.82745098039215681" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="l4f-Jx-5g8" firstAttribute="top" secondItem="exz-Wm-kFo" secondAttribute="bottom" constant="15" id="9zR-Tn-FtQ"/>
-                                    <constraint firstItem="exz-Wm-kFo" firstAttribute="top" secondItem="vFL-ZK-XA0" secondAttribute="top" id="Bjo-GC-qzn"/>
+                                    <constraint firstItem="l4f-Jx-5g8" firstAttribute="top" secondItem="vFL-ZK-XA0" secondAttribute="top" constant="25" id="1Vx-Ba-upN"/>
+                                    <constraint firstAttribute="bottom" secondItem="f2W-V9-gbA" secondAttribute="bottom" id="9DC-LC-KPK"/>
+                                    <constraint firstItem="f2W-V9-gbA" firstAttribute="leading" secondItem="vFL-ZK-XA0" secondAttribute="leading" id="Av0-Vh-yoC"/>
                                     <constraint firstItem="l4f-Jx-5g8" firstAttribute="leading" secondItem="vFL-ZK-XA0" secondAttribute="leading" constant="15" id="H2F-h0-aFh"/>
                                     <constraint firstAttribute="trailing" secondItem="l4f-Jx-5g8" secondAttribute="trailing" constant="15" id="X5i-Zg-Mbw"/>
-                                    <constraint firstItem="exz-Wm-kFo" firstAttribute="leading" secondItem="vFL-ZK-XA0" secondAttribute="leading" id="Xxj-8g-geh"/>
-                                    <constraint firstItem="exz-Wm-kFo" firstAttribute="height" secondItem="vFL-ZK-XA0" secondAttribute="height" multiplier="0.3" id="YNx-Sz-iql"/>
-                                    <constraint firstAttribute="trailing" secondItem="exz-Wm-kFo" secondAttribute="trailing" id="ebo-Fn-rBj"/>
-                                    <constraint firstAttribute="bottom" secondItem="l4f-Jx-5g8" secondAttribute="bottom" constant="15" id="gsz-CN-Avh"/>
+                                    <constraint firstItem="f2W-V9-gbA" firstAttribute="height" secondItem="vFL-ZK-XA0" secondAttribute="height" multiplier="0.25" id="fgc-94-ENP"/>
+                                    <constraint firstItem="l4f-Jx-5g8" firstAttribute="height" secondItem="vFL-ZK-XA0" secondAttribute="height" multiplier="0.7" id="jOe-mT-F06"/>
+                                    <constraint firstAttribute="trailing" secondItem="f2W-V9-gbA" secondAttribute="trailing" id="vjG-Nd-Xzq"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -229,7 +299,7 @@
                         <constraints>
                             <constraint firstItem="vFL-ZK-XA0" firstAttribute="leading" secondItem="BiU-y7-XXt" secondAttribute="leading" id="RXs-Mm-LAU"/>
                             <constraint firstAttribute="trailing" secondItem="vFL-ZK-XA0" secondAttribute="trailing" id="TCr-IY-vNE"/>
-                            <constraint firstItem="vFL-ZK-XA0" firstAttribute="top" secondItem="BiU-y7-XXt" secondAttribute="top" id="e8j-s2-Mf1"/>
+                            <constraint firstItem="vFL-ZK-XA0" firstAttribute="top" secondItem="OIA-QX-RGS" secondAttribute="top" id="e8j-s2-Mf1"/>
                             <constraint firstAttribute="bottom" secondItem="vFL-ZK-XA0" secondAttribute="bottom" id="hrL-ly-zAk"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="OIA-QX-RGS"/>
@@ -238,16 +308,15 @@
                         <barButtonItem key="backBarButtonItem" title=" " id="GlW-kL-ANk"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="audLabel" destination="Jt9-hr-kEm" id="DVX-jv-SDt"/>
                         <outlet property="collectionView" destination="l4f-Jx-5g8" id="IXC-2f-2k0"/>
-                        <outlet property="gbpLabel" destination="i6Q-oF-pDu" id="atj-qt-j90"/>
-                        <outlet property="usdLabel" destination="3sc-jG-lM2" id="W1l-ga-FMU"/>
+                        <outlet property="descriptionLabel" destination="phW-T6-VqL" id="bh3-Yd-DuJ"/>
                         <segue destination="lk0-xp-M9G" kind="show" identifier="segueTabbar" id="cWk-qx-fSL"/>
+                        <segue destination="Mac-Nh-UmC" kind="show" identifier="segueHistory" id="bSB-2s-2ns"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O6g-eh-h0V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1961" y="42"/>
+            <point key="canvasLocation" x="1960.8" y="41.829085457271368"/>
         </scene>
         <!--Compound Savings View Controller-->
         <scene sceneID="9ku-of-7cW">
@@ -848,6 +917,210 @@
             </objects>
             <point key="canvasLocation" x="4932" y="326.98650674662673"/>
         </scene>
+        <!--History View Controller-->
+        <scene sceneID="1eh-Tm-lWM">
+            <objects>
+                <viewController id="Mac-Nh-UmC" customClass="HistoryViewController" customModule="FinancialCalc" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6gV-HB-TXP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GLM-Ko-fvs">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="historyCell" rowHeight="238" id="s1I-jy-Wsz" customClass="HistoryTableViewCell" customModule="FinancialCalc" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="238"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="s1I-jy-Wsz" id="ZO4-ya-Frc">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="238"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="nYz-V9-vM2">
+                                                    <rect key="frame" x="35" y="35.5" width="305" height="49"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="zGU-f9-8NS">
+                                                            <rect key="frame" x="0.0" y="0.0" width="145" height="49"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wnY-x7-fk9" customClass="FinCalcLabel" customModule="FinancialCalc" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="145" height="20.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="phw-Uk-6vC" customClass="FinCalcLabel" customModule="FinancialCalc" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="28.5" width="145" height="20.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="x7w-ul-nlQ">
+                                                            <rect key="frame" x="160" y="0.0" width="145" height="49"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PTT-tK-seB" customClass="FinCalcLabel" customModule="FinancialCalc" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="145" height="20.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xiZ-Z2-S7k" customClass="FinCalcLabel" customModule="FinancialCalc" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="28.5" width="145" height="20.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="RoI-66-Vgb">
+                                                    <rect key="frame" x="35" y="99.5" width="305" height="49"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="fxa-uS-bun">
+                                                            <rect key="frame" x="0.0" y="0.0" width="145" height="49"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bMx-hV-9F1" customClass="FinCalcLabel" customModule="FinancialCalc" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="145" height="20.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NRW-Fe-tJ4" customClass="FinCalcLabel" customModule="FinancialCalc" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="28.5" width="145" height="20.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Sov-BR-okd">
+                                                            <rect key="frame" x="160" y="0.0" width="145" height="49"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XAo-No-0pY" customClass="FinCalcLabel" customModule="FinancialCalc" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="145" height="20.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nGC-Sp-axi" customClass="FinCalcLabel" customModule="FinancialCalc" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="28.5" width="145" height="20.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="ueN-nV-fTj">
+                                                    <rect key="frame" x="35" y="163.5" width="305" height="49"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="k9G-kD-Eji">
+                                                            <rect key="frame" x="0.0" y="0.0" width="145" height="49"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g8B-7b-dc8" customClass="FinCalcLabel" customModule="FinancialCalc" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="145" height="20.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BPW-lz-oCd" customClass="FinCalcLabel" customModule="FinancialCalc" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="28.5" width="145" height="20.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Mw8-8M-dhe">
+                                                            <rect key="frame" x="160" y="0.0" width="145" height="49"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GHX-wH-KOm" customClass="FinCalcLabel" customModule="FinancialCalc" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="145" height="20.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EbC-be-JIX" customClass="FinCalcLabel" customModule="FinancialCalc" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="28.5" width="145" height="20.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RDZ-Js-uOe">
+                                                    <rect key="frame" x="15" y="226" width="345" height="1"/>
+                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="ayq-Sa-207"/>
+                                                    </constraints>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tM7-4k-i1o" customClass="FinCalcLabel" customModule="FinancialCalc" customModuleProvider="target">
+                                                    <rect key="frame" x="35" y="5" width="42" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="nYz-V9-vM2" firstAttribute="top" secondItem="tM7-4k-i1o" secondAttribute="bottom" constant="10" id="05h-GA-UfN"/>
+                                                <constraint firstItem="tM7-4k-i1o" firstAttribute="top" secondItem="ZO4-ya-Frc" secondAttribute="top" constant="5" id="C9w-a9-rI3"/>
+                                                <constraint firstItem="RDZ-Js-uOe" firstAttribute="leading" secondItem="ZO4-ya-Frc" secondAttribute="leadingMargin" id="CCV-qN-Qsh"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="RoI-66-Vgb" secondAttribute="trailing" constant="20" id="DjO-m6-ZcP"/>
+                                                <constraint firstItem="nYz-V9-vM2" firstAttribute="leading" secondItem="ZO4-ya-Frc" secondAttribute="leadingMargin" constant="20" id="GWL-by-sTf"/>
+                                                <constraint firstItem="ueN-nV-fTj" firstAttribute="top" secondItem="RoI-66-Vgb" secondAttribute="bottom" constant="15" id="HwK-cl-2zY"/>
+                                                <constraint firstItem="RoI-66-Vgb" firstAttribute="leading" secondItem="ZO4-ya-Frc" secondAttribute="leadingMargin" constant="20" id="K4c-rf-6FK"/>
+                                                <constraint firstItem="RDZ-Js-uOe" firstAttribute="trailing" secondItem="ZO4-ya-Frc" secondAttribute="trailingMargin" id="afq-Ez-iiz"/>
+                                                <constraint firstItem="RoI-66-Vgb" firstAttribute="top" secondItem="nYz-V9-vM2" secondAttribute="bottom" constant="15" id="ezu-b2-eFy"/>
+                                                <constraint firstItem="tM7-4k-i1o" firstAttribute="leading" secondItem="nYz-V9-vM2" secondAttribute="leading" id="kwH-gV-ADd"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="nYz-V9-vM2" secondAttribute="trailing" constant="20" id="meM-eX-BWg"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="ueN-nV-fTj" secondAttribute="trailing" constant="20" id="uHz-np-qqH"/>
+                                                <constraint firstItem="RDZ-Js-uOe" firstAttribute="bottom" secondItem="ZO4-ya-Frc" secondAttribute="bottomMargin" constant="0.10000000000000001" id="vjv-nQ-nNi"/>
+                                                <constraint firstItem="ueN-nV-fTj" firstAttribute="leading" secondItem="ZO4-ya-Frc" secondAttribute="leadingMargin" constant="20" id="zFf-o9-lMC"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="compoundLabel" destination="g8B-7b-dc8" id="jWE-WB-Sgi"/>
+                                            <outlet property="compoundValLabel" destination="BPW-lz-oCd" id="6nt-UO-a1l"/>
+                                            <outlet property="contributionPayLabel" destination="GHX-wH-KOm" id="fbJ-ws-cNW"/>
+                                            <outlet property="contributionPayValLabel" destination="EbC-be-JIX" id="dNp-pL-zNH"/>
+                                            <outlet property="futureLabel" destination="PTT-tK-seB" id="Dc3-Xg-wc9"/>
+                                            <outlet property="futureValLabel" destination="xiZ-Z2-S7k" id="NSi-Ac-oeg"/>
+                                            <outlet property="presentLabel" destination="wnY-x7-fk9" id="HC9-LE-qJy"/>
+                                            <outlet property="presentValLabel" destination="phw-Uk-6vC" id="2oW-3R-tZk"/>
+                                            <outlet property="rateLabel" destination="bMx-hV-9F1" id="Vm5-rz-JIc"/>
+                                            <outlet property="rateValLabel" destination="NRW-Fe-tJ4" id="maQ-n5-AO8"/>
+                                            <outlet property="timeLabel" destination="tM7-4k-i1o" id="WtH-jS-5D9"/>
+                                            <outlet property="yearLabel" destination="XAo-No-0pY" id="g1d-xv-rRP"/>
+                                            <outlet property="yearValLabel" destination="nGC-Sp-axi" id="Hqw-Xg-vKI"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="GLM-Ko-fvs" firstAttribute="leading" secondItem="zaQ-T7-irB" secondAttribute="leading" id="F3q-io-ChS"/>
+                            <constraint firstItem="GLM-Ko-fvs" firstAttribute="top" secondItem="zaQ-T7-irB" secondAttribute="top" id="b4J-at-fsG"/>
+                            <constraint firstItem="GLM-Ko-fvs" firstAttribute="bottom" secondItem="zaQ-T7-irB" secondAttribute="bottom" id="bxq-ma-Sv6"/>
+                            <constraint firstItem="GLM-Ko-fvs" firstAttribute="trailing" secondItem="zaQ-T7-irB" secondAttribute="trailing" id="eLF-dt-Gvf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zaQ-T7-irB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="mp6-4q-wbu"/>
+                    <connections>
+                        <outlet property="tableView" destination="GLM-Ko-fvs" id="lMW-Ou-NIM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CtN-Vr-Skg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3013.5999999999999" y="804.64767616191909"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="iD8-oR-wzi">
             <objects>
@@ -874,6 +1147,7 @@
     </scenes>
     <resources>
         <image name="arrow.left" catalog="system" width="64" height="48"/>
+        <image name="back 2" width="313" height="220"/>
         <image name="back1" width="313" height="208.5"/>
         <image name="iconCompound" width="43.5" height="43.5"/>
         <image name="iconLoan" width="60" height="60"/>
@@ -882,6 +1156,6 @@
         <image name="pencil.circle.fill" catalog="system" width="64" height="60"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Be8-Kz-Yiy"/>
+        <segue reference="7ED-vE-UG2"/>
     </inferredMetricsTieBreakers>
 </document>
