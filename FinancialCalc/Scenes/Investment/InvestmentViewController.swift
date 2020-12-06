@@ -35,6 +35,8 @@ class InvestmentViewController: CustomViewController {
         }
         return appDelegate.persistentContainer.viewContext
     }
+    
+    var investment: Investment?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -128,6 +130,10 @@ class InvestmentViewController: CustomViewController {
         let ratePercent = r * 100;
         print("RATE--",r)
         resultString = "REQUIRED RATE : \(String(format:"%.2f",ratePercent))%"
+        
+        //SAVE TO COREDATA
+        
+        investment = Investment(presentValue: String(format:"%.2f",presentValue), futureValue: String(format:"%.2f",futureValue), interestRate: String(format:"%.2f",ratePercent), years: String(years), compounds: String(noOfCompoundsPerYear), time: getTodayString(), inserIntoManagedObjectContext: self.context)
         isError = false
         setResult(showError: false)
 
@@ -142,6 +148,10 @@ class InvestmentViewController: CustomViewController {
         
         let fv = pv * pow( 1 + (r/n),nt)
         resultString = "FUTURE VALUE : \(String(format:"%.2f",fv))"
+        
+        //SAVE TO COREDATA
+        
+        investment = Investment(presentValue: String(format:"%.2f",presentValue), futureValue: String(format:"%.2f",fv), interestRate: String(format:"%.2f",interestRate), years: String(years), compounds: String(noOfCompoundsPerYear), time: getTodayString(), inserIntoManagedObjectContext: self.context)
         isError = false
         setResult(showError: false)
     }
@@ -155,6 +165,10 @@ class InvestmentViewController: CustomViewController {
 
         let pv = fv / pow( 1 + (r/n), nt)
         resultString = "PRESENT VALUE : \(String(format:"%.2f",pv))"
+        
+        //SAVE TO COREDATA
+        
+        investment = Investment(presentValue: String(format:"%.2f",pv), futureValue: String(format:"%.2f",futureValue), interestRate: String(format:"%.2f",interestRate), years: String(years), compounds: String(noOfCompoundsPerYear), time: getTodayString(), inserIntoManagedObjectContext: self.context)
         isError = false
         setResult(showError: false)
 
@@ -169,6 +183,10 @@ class InvestmentViewController: CustomViewController {
         let t = log(fv/pv) / (n * log( 1 + (r/n)))
         let totalNumPayment = t * n
         resultString = "YEARS : \(String(format:"%.0f",t)) \nTOTAL NUMBER OF COMPOUNDS :\(String(format:"%.0f",totalNumPayment))"
+        
+        //SAVE TO COREDATA
+        
+        investment = Investment(presentValue: String(format:"%.2f",pv), futureValue: String(format:"%.2f",futureValue), interestRate: String(format:"%.2f",interestRate), years: String(t), compounds: String(noOfCompoundsPerYear), time: getTodayString(), inserIntoManagedObjectContext: self.context)
         isError = false
         setResult(showError: false)
 

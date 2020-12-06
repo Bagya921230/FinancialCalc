@@ -926,7 +926,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GLM-Ko-fvs">
-                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="historyCell" rowHeight="238" id="s1I-jy-Wsz" customClass="HistoryTableViewCell" customModule="FinancialCalc" customModuleProvider="target">
@@ -1106,7 +1106,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="GLM-Ko-fvs" firstAttribute="leading" secondItem="zaQ-T7-irB" secondAttribute="leading" id="F3q-io-ChS"/>
-                            <constraint firstItem="GLM-Ko-fvs" firstAttribute="top" secondItem="zaQ-T7-irB" secondAttribute="top" id="b4J-at-fsG"/>
+                            <constraint firstItem="GLM-Ko-fvs" firstAttribute="top" secondItem="zaQ-T7-irB" secondAttribute="top" constant="20" id="b4J-at-fsG"/>
                             <constraint firstItem="GLM-Ko-fvs" firstAttribute="bottom" secondItem="zaQ-T7-irB" secondAttribute="bottom" id="bxq-ma-Sv6"/>
                             <constraint firstItem="GLM-Ko-fvs" firstAttribute="trailing" secondItem="zaQ-T7-irB" secondAttribute="trailing" id="eLF-dt-Gvf"/>
                         </constraints>

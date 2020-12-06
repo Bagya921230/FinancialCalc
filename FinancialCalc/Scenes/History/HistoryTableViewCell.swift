@@ -46,7 +46,7 @@ class HistoryTableViewCell: UITableViewCell {
             futureLabel.set("Total payment", typographyStyle: .contentLight)
             contributionPayLabel.set("Monthly Payment", typographyStyle: .contentLight)
 
-        } else if (selectedType == "MORT") {
+        } else if (selectedType == "MORTGAGE") {
             presentLabel.set("Loan Amount", typographyStyle: .contentLight)
             futureLabel.set("Total payment", typographyStyle: .contentLight)
             contributionPayLabel.set("Monthly Payment", typographyStyle: .contentLight)

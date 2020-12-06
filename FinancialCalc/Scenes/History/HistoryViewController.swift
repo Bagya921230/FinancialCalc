@@ -30,6 +30,7 @@ class HistoryViewController: CustomViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.title = "\(selectedType) HISTORY"
         tableView.delegate = self
         tableView.dataSource = self
         tableView.rowHeight = 240
@@ -114,7 +115,7 @@ extension HistoryViewController : UITableViewDataSource , UITableViewDelegate{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if (selectedType == "LOAN") {
             return loanList.count
-        } else if (selectedType == "MORT") {
+        } else if (selectedType == "MORTGAGE") {
             return mortgageList.count
         } else if (selectedType == "SAVING") {
             return savingsList.count
@@ -140,7 +141,7 @@ extension HistoryViewController : UITableViewDataSource , UITableViewDelegate{
                        valCompound: item.compounds ?? "",
                        valContribution: item.payment ?? "",
                        time: item.time ?? "")
-        } else if (selectedType == "MORT") {
+        } else if (selectedType == "MORTGAGE") {
             let item = mortgageList[indexPath.row]
             cell.setUp(valPresent: item.loan ?? "",
                        valFuture: item.total ?? "",

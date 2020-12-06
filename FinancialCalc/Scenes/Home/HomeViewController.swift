@@ -42,7 +42,7 @@ class HomeViewController: CustomViewController {
     }
     
     @IBAction func showMortHistoryAction(_ sender: Any) {
-        selectedType = "MORT"
+        selectedType = "MORTGAGE"
         performSegue(withIdentifier: "segueHistory", sender: nil)
     }
     

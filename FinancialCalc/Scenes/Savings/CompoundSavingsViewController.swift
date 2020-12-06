@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class CompoundSavingsViewController: UIViewController {
+class CompoundSavingsViewController: CustomViewController {
 
     @IBOutlet weak var calculateButton: PrimaryButton!
     @IBOutlet weak var resetButton: UIButton!
@@ -30,6 +30,7 @@ class CompoundSavingsViewController: UIViewController {
     var interestRate : Double = 0
     var resultString : String = "";
     var isError : Bool = false;
+    var saving: Saving?
     
     var context:NSManagedObjectContext? {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
@@ -114,6 +115,10 @@ class CompoundSavingsViewController: UIViewController {
         let sv : Double = calculateSeriesValue()
         let pv = (fv - sv)/pow( 1 + (r/n),nt)
         resultString = "INITIAL INVESTMENT VALUE : \(String(format:"%.2f",pv))"
+        
+        //SAVE TO COREDATA
+        
+        saving = Saving(presentValue: String(format:"%.2f",pv), futureValue: String(format:"%.2f",fv), interestRate: String(format:"%.2f",interestRate), years: String(years), monthlyContribution: String(format:"%.2f",contribution), compounds: String(noOfCompoundsPerYear), time: getTodayString(), inserIntoManagedObjectContext: self.context)
         isError = false
         setResult(showError: false)
     }
@@ -150,6 +155,10 @@ class CompoundSavingsViewController: UIViewController {
         
         let mc = (fv - ip) / (((pow(1 + (r/n),nt)) - 1 )/(r/n))
         resultString = "MONTHLY CONTRIBUTION NEEDED : \(String(format:"%.2f",mc))"
+        
+        //SAVE TO COREDATA
+        saving = Saving(presentValue: String(format:"%.2f",presentValue), futureValue: String(format:"%.2f",fv), interestRate: String(format:"%.2f",interestRate), years: String(years), monthlyContribution: String(format:"%.2f",contribution), compounds: String(noOfCompoundsPerYear), time: getTodayString(), inserIntoManagedObjectContext: self.context)
+        
         isError = false
         setResult(showError: false)    }
 
@@ -157,6 +166,10 @@ class CompoundSavingsViewController: UIViewController {
     func calculateFutureValue() {
         let fv = calculateInterestForPrincipal() + calculateSeriesValue()
         resultString = "FUTURE VALUE : \(String(format:"%.2f",fv))"
+        
+        //SAVE TO COREDATA
+        saving = Saving(presentValue: String(format:"%.2f",presentValue), futureValue: String(format:"%.2f",fv), interestRate: String(format:"%.2f",interestRate), years: String(years), monthlyContribution: String(format:"%.2f",contribution), compounds: String(noOfCompoundsPerYear), time: getTodayString(), inserIntoManagedObjectContext: self.context)
+        
         isError = false
         setResult(showError: false)
     }
@@ -171,6 +184,9 @@ class CompoundSavingsViewController: UIViewController {
         let t = log(fv/pv) / (n * log( 1 + (r/n)))
         let totalNumPayment = t * n
         resultString = "YEARS : \(String(format:"%.0f",t)) \n TOTAL NUMBER OF PAYMENTS :\(String(format:"%.0f",totalNumPayment))"
+        
+        //SAVE TO COREDATA
+        saving = Saving(presentValue: String(format:"%.2f",presentValue), futureValue: String(format:"%.2f",futureValue), interestRate: String(format:"%.2f",interestRate), years: String(t), monthlyContribution: String(format:"%.2f",contribution), compounds: String(noOfCompoundsPerYear), time: getTodayString(), inserIntoManagedObjectContext: self.context)
         isError = false
         setResult(showError: false)
 
