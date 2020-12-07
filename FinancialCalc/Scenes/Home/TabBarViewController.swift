@@ -20,6 +20,22 @@ class TabBarViewController: UITabBarController, UITabBarControllerDelegate {
         self.delegate = self
     }
     
+    //MARK:- helpAction
+    @IBAction func helpAction(_ sender: Any) {
+        switch selectedIndex {
+        case 0:
+            performSegue(withIdentifier: "segueInvestmentHelp", sender: nil)
+        case 1:
+            performSegue(withIdentifier: "segueSavingsHelp", sender: nil)
+        case 2:
+            performSegue(withIdentifier: "segueLoanshelp", sender: nil)
+        case 3:
+            performSegue(withIdentifier: "segueLoanshelp", sender: nil)
+        default:
+            return
+        }
+    }
+    
     //MARK:- UITabBarDelegate
     override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
         print("Selected item",item)
@@ -27,19 +43,7 @@ class TabBarViewController: UITabBarController, UITabBarControllerDelegate {
     
     //MARK:- UITabBarControllerDelegate
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
-        let selectedIndex = tabBarController.viewControllers?.firstIndex(of: viewController)!
-        switch selectedIndex {
-        case 0:
-            self.title = "SAVINGS"
-        case 1:
-            self.title = "COMPOUND INTEREST SAVINGS"
-        case 2:
-            self.title = "LOANS"
-        case 3:
-            self.title = "MORTGAGE"
-        default:
-            return
-        }
+
     }
 
 }

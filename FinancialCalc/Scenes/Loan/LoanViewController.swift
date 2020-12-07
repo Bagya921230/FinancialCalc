@@ -57,6 +57,8 @@ class LoanViewController: CustomViewController {
         resetButton.titleLabel?.text = "RESET"
         detailsButton.setTitle("AMORTIZATION SCHEDULE")
         detailsButton.isEnabled = false
+        
+        
     }
     
     //MARK:- Calculate on button click
@@ -189,5 +191,6 @@ extension LoanViewController: FinCalcTextFieldDelegate {
     func finCalcFieldReturnTapped(_ finCalcTextField: FinCalcTextField) {
         print("return tapped")
     }
+
 
 }

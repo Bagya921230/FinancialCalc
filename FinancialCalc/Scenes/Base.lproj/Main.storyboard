@@ -316,12 +316,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O6g-eh-h0V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1960.8" y="41.829085457271368"/>
+            <point key="canvasLocation" x="2609" y="-46"/>
         </scene>
-        <!--Compound Savings View Controller-->
+        <!--Savings-->
         <scene sceneID="9ku-of-7cW">
             <objects>
-                <viewController id="lLN-Ya-nBH" customClass="CompoundSavingsViewController" customModule="FinancialCalc" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="lLN-Ya-nBH" userLabel="Savings" customClass="CompoundSavingsViewController" customModule="FinancialCalc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0Ub-Sf-guI">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -443,10 +443,10 @@
             </objects>
             <point key="canvasLocation" x="4932" y="-359.37031484257875"/>
         </scene>
-        <!--Savings-->
+        <!--Investment-->
         <scene sceneID="fRV-YO-HjM">
             <objects>
-                <viewController title="Savings" id="enK-BR-w75" customClass="InvestmentViewController" customModule="FinancialCalc" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Savings" id="enK-BR-w75" userLabel="Investment" customClass="InvestmentViewController" customModule="FinancialCalc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7ji-Vw-Hlm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -649,7 +649,177 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X7L-vM-bTh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5848.8000000000002" y="326.98650674662673"/>
+            <point key="canvasLocation" x="4932" y="1084"/>
+        </scene>
+        <!--Help Loan View Controller-->
+        <scene sceneID="gfK-AI-qSa">
+            <objects>
+                <viewController id="TdF-2Y-uOI" customClass="HelpLoanViewController" customModule="FinancialCalc" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CKx-vR-xqZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B5g-Tj-dB2">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qsO-h5-NYc">
+                                        <rect key="frame" x="295" y="30" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="a4h-ZJ-H9E"/>
+                                            <constraint firstAttribute="width" constant="50" id="oDJ-e0-yf7"/>
+                                        </constraints>
+                                        <state key="normal" image="closeSmall"/>
+                                        <connections>
+                                            <action selector="closeAction:" destination="TdF-2Y-uOI" eventType="touchUpInside" id="1wP-za-rtW"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19I-KR-7Q2" customClass="FinCalcLabel" customModule="FinancialCalc" customModuleProvider="target">
+                                        <rect key="frame" x="30" y="80" width="315" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.77124357880000005" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="qsO-h5-NYc" secondAttribute="trailing" constant="30" id="9zt-3A-hJ0"/>
+                                    <constraint firstItem="qsO-h5-NYc" firstAttribute="top" secondItem="B5g-Tj-dB2" secondAttribute="top" constant="30" id="RP8-pI-6iz"/>
+                                    <constraint firstAttribute="trailing" secondItem="19I-KR-7Q2" secondAttribute="trailing" constant="30" id="VrE-LG-IL8"/>
+                                    <constraint firstItem="19I-KR-7Q2" firstAttribute="leading" secondItem="B5g-Tj-dB2" secondAttribute="leading" constant="30" id="XV6-h9-hRm"/>
+                                    <constraint firstItem="19I-KR-7Q2" firstAttribute="top" secondItem="B5g-Tj-dB2" secondAttribute="top" constant="80" id="dji-XZ-8ZM"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0IF-EJ-3xd" firstAttribute="bottom" secondItem="B5g-Tj-dB2" secondAttribute="bottom" id="CIL-t3-o2H"/>
+                            <constraint firstItem="B5g-Tj-dB2" firstAttribute="leading" secondItem="0IF-EJ-3xd" secondAttribute="leading" id="RNt-dK-Ss5"/>
+                            <constraint firstItem="0IF-EJ-3xd" firstAttribute="trailing" secondItem="B5g-Tj-dB2" secondAttribute="trailing" id="jcT-s7-43H"/>
+                            <constraint firstItem="B5g-Tj-dB2" firstAttribute="top" secondItem="0IF-EJ-3xd" secondAttribute="top" id="oYK-6m-2g6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0IF-EJ-3xd"/>
+                    </view>
+                    <connections>
+                        <outlet property="helpLabel" destination="19I-KR-7Q2" id="hNC-bD-JKC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nIA-dY-Xhh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1674" y="-728"/>
+        </scene>
+        <!--Help Saving View Controller-->
+        <scene sceneID="2ah-36-PaR">
+            <objects>
+                <viewController id="IXN-Or-wI8" customClass="HelpSavingViewController" customModule="FinancialCalc" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gTW-kr-xnS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CaA-fF-sK4">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EUd-An-5RI">
+                                        <rect key="frame" x="295" y="30" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="CYc-5S-Y1s"/>
+                                            <constraint firstAttribute="height" constant="50" id="zY9-zq-A9F"/>
+                                        </constraints>
+                                        <state key="normal" image="closeSmall"/>
+                                        <connections>
+                                            <action selector="closeAction:" destination="IXN-Or-wI8" eventType="touchUpInside" id="6eK-Tc-bo8"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="icL-Ye-eY9" customClass="FinCalcLabel" customModule="FinancialCalc" customModuleProvider="target">
+                                        <rect key="frame" x="30" y="80" width="315" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.77124357880000005" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="EUd-An-5RI" secondAttribute="trailing" constant="30" id="Cw3-Z1-P7V"/>
+                                    <constraint firstItem="icL-Ye-eY9" firstAttribute="leading" secondItem="CaA-fF-sK4" secondAttribute="leading" constant="30" id="KMm-Ov-Xh7"/>
+                                    <constraint firstAttribute="trailing" secondItem="icL-Ye-eY9" secondAttribute="trailing" constant="30" id="lDu-Gw-lex"/>
+                                    <constraint firstItem="EUd-An-5RI" firstAttribute="top" secondItem="CaA-fF-sK4" secondAttribute="top" constant="30" id="pgX-Bu-PyX"/>
+                                    <constraint firstItem="icL-Ye-eY9" firstAttribute="top" secondItem="CaA-fF-sK4" secondAttribute="top" constant="80" id="wh6-kx-Kl3"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="CaA-fF-sK4" firstAttribute="top" secondItem="WbW-ud-3rl" secondAttribute="top" id="0CE-di-1C4"/>
+                            <constraint firstItem="WbW-ud-3rl" firstAttribute="trailing" secondItem="CaA-fF-sK4" secondAttribute="trailing" id="40Y-53-pW6"/>
+                            <constraint firstItem="CaA-fF-sK4" firstAttribute="leading" secondItem="WbW-ud-3rl" secondAttribute="leading" id="60p-hE-tpJ"/>
+                            <constraint firstItem="WbW-ud-3rl" firstAttribute="bottom" secondItem="CaA-fF-sK4" secondAttribute="bottom" id="gCT-2B-zEP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WbW-ud-3rl"/>
+                    </view>
+                    <connections>
+                        <outlet property="helpLabel" destination="icL-Ye-eY9" id="kYn-29-sDZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3rr-6n-gSQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2369" y="-825"/>
+        </scene>
+        <!--Help Investment View Controller-->
+        <scene sceneID="Obp-vk-BnR">
+            <objects>
+                <viewController id="hcX-uz-SKB" customClass="HelpInvestmentViewController" customModule="FinancialCalc" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EVV-RX-qAp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VDm-hS-SH1">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7dj-Sf-6Vf">
+                                        <rect key="frame" x="295" y="30" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="DAt-gf-c0E"/>
+                                            <constraint firstAttribute="height" constant="50" id="FB1-7m-7TP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <state key="normal" image="closeSmall"/>
+                                        <connections>
+                                            <action selector="closeAction:" destination="hcX-uz-SKB" eventType="touchUpInside" id="NAv-ad-N2c"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xV3-KI-kBr" customClass="FinCalcLabel" customModule="FinancialCalc" customModuleProvider="target">
+                                        <rect key="frame" x="30" y="80" width="315" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.77124357876712324" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="7dj-Sf-6Vf" firstAttribute="top" secondItem="VDm-hS-SH1" secondAttribute="top" constant="30" id="3rA-R2-k83"/>
+                                    <constraint firstAttribute="trailing" secondItem="xV3-KI-kBr" secondAttribute="trailing" constant="30" id="Vfv-V6-fPN"/>
+                                    <constraint firstItem="xV3-KI-kBr" firstAttribute="leading" secondItem="VDm-hS-SH1" secondAttribute="leading" constant="30" id="XOz-je-PI4"/>
+                                    <constraint firstItem="xV3-KI-kBr" firstAttribute="top" secondItem="VDm-hS-SH1" secondAttribute="top" constant="80" id="eas-M6-bPC"/>
+                                    <constraint firstAttribute="trailing" secondItem="7dj-Sf-6Vf" secondAttribute="trailing" constant="30" id="xJ9-zg-hYp"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="VDm-hS-SH1" secondAttribute="bottom" id="03X-29-dh9"/>
+                            <constraint firstItem="VDm-hS-SH1" firstAttribute="top" secondItem="Y5e-qQ-kbs" secondAttribute="top" id="DPG-Yb-Nui"/>
+                            <constraint firstItem="VDm-hS-SH1" firstAttribute="leading" secondItem="Y5e-qQ-kbs" secondAttribute="leading" id="LRm-1c-ju7"/>
+                            <constraint firstItem="VDm-hS-SH1" firstAttribute="trailing" secondItem="Y5e-qQ-kbs" secondAttribute="trailing" id="dfc-6S-ULo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Y5e-qQ-kbs"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="590-gI-ev7"/>
+                    <connections>
+                        <outlet property="helpLabel" destination="xV3-KI-kBr" id="q0N-Xj-tsc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rX9-kU-noU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3061.5999999999999" y="-672.41379310344837"/>
         </scene>
         <!--Tab Bar View Controller-->
         <scene sceneID="mbB-E1-Ta3">
@@ -657,6 +827,11 @@
                 <tabBarController id="lk0-xp-M9G" customClass="TabBarViewController" customModule="FinancialCalc" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="jHD-BD-YVb">
                         <barButtonItem key="backBarButtonItem" title="  " id="R7e-GQ-GGQ"/>
+                        <barButtonItem key="rightBarButtonItem" title="Help" id="ElR-lU-trj">
+                            <connections>
+                                <action selector="helpAction:" destination="lk0-xp-M9G" id="0jl-Ac-63V"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="c5g-4h-xMA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
@@ -671,6 +846,9 @@
                         <segue destination="lLN-Ya-nBH" kind="relationship" relationship="viewControllers" id="cIP-BP-xWh"/>
                         <segue destination="q8l-mL-sM2" kind="relationship" relationship="viewControllers" id="idr-ai-HQU"/>
                         <segue destination="nc2-iW-28m" kind="relationship" relationship="viewControllers" id="AUI-8u-c5t"/>
+                        <segue destination="hcX-uz-SKB" kind="presentation" identifier="segueInvestmentHelp" id="05A-ou-OPo"/>
+                        <segue destination="IXN-Or-wI8" kind="presentation" identifier="segueSavingsHelp" id="evy-6O-pBI"/>
+                        <segue destination="TdF-2Y-uOI" kind="presentation" identifier="segueLoanshelp" id="YeE-qS-hCV"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pbI-XF-rNk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -790,7 +968,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rS2-d4-IHO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3985" y="722"/>
+            <point key="canvasLocation" x="4039" y="828"/>
         </scene>
         <!--Loan View Controller-->
         <scene sceneID="Xn2-AO-yaW">
@@ -929,8 +1107,16 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="noDataCell" rowHeight="37" id="6cA-Iu-JoV" userLabel="noDataCell">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="37"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6cA-Iu-JoV" id="cLw-vk-PoT">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="37"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="historyCell" rowHeight="238" id="s1I-jy-Wsz" customClass="HistoryTableViewCell" customModule="FinancialCalc" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="238"/>
+                                        <rect key="frame" x="0.0" y="65" width="375" height="238"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="s1I-jy-Wsz" id="ZO4-ya-Frc">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="238"/>
@@ -1149,6 +1335,7 @@
         <image name="arrow.left" catalog="system" width="64" height="48"/>
         <image name="back 2" width="313" height="220"/>
         <image name="back1" width="313" height="208.5"/>
+        <image name="closeSmall" width="12" height="13"/>
         <image name="iconCompound" width="43.5" height="43.5"/>
         <image name="iconLoan" width="60" height="60"/>
         <image name="iconMortgage" width="40" height="40"/>
@@ -1156,6 +1343,6 @@
         <image name="pencil.circle.fill" catalog="system" width="64" height="60"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="7ED-vE-UG2"/>
+        <segue reference="Be8-Kz-Yiy"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -54,13 +54,13 @@ class HistoryTableViewCell: UITableViewCell {
         } else if (selectedType == "SAVING") {
             presentLabel.set("Present Value", typographyStyle: .contentLight)
             futureLabel.set("Future Value", typographyStyle: .contentLight)
-            contributionPayLabel.isHidden = true
-            contributionPayValLabel.isHidden = true
+            contributionPayLabel.set("Monthly Contribution", typographyStyle: .contentLight)
             
         } else if (selectedType == "INVESTMENT"){
             presentLabel.set("Present Value", typographyStyle: .contentLight)
             futureLabel.set("Future Value", typographyStyle: .contentLight)
-            contributionPayLabel.set("Monthly Contribution", typographyStyle: .contentLight)
+            contributionPayLabel.isHidden = true
+            contributionPayValLabel.isHidden = true
         }
     }
     

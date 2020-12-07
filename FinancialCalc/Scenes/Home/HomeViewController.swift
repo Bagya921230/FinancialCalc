@@ -32,7 +32,9 @@ class HomeViewController: CustomViewController {
         super.viewDidLoad()
         collectionView.delegate = self
         collectionView.dataSource = self
-        descriptionLabel.set("Find past calculation results using below history facility", typographyStyle: .contentWhite, alignment: .center)
+        descriptionLabel.set("Find saved calculation results using below history facility", typographyStyle: .contentWhite, alignment: .center)
+        self.navigationItem.setHidesBackButton(true, animated: true)
+
     }
     
      //MARK: History Button Actions
