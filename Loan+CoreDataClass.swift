@@ -23,3 +23,4 @@ public class Loan: NSManagedObject {
         self.year = year
     }
 }
+

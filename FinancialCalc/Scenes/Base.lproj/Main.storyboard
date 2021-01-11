@@ -1340,9 +1340,9 @@
         <image name="iconLoan" width="60" height="60"/>
         <image name="iconMortgage" width="40" height="40"/>
         <image name="iconSaving" width="50" height="50"/>
-        <image name="pencil.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="pencil.circle.fill" catalog="system" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Be8-Kz-Yiy"/>
+        <segue reference="7ED-vE-UG2"/>
     </inferredMetricsTieBreakers>
 </document>
